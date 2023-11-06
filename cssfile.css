@@ -1,0 +1,75 @@
+/*버튼 배경색*/
+.button-background-white{
+    background-color: white;
+    border-radius: 4px;
+}
+
+/*글자 오픈산스*/
+.font-opensans-logo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+}
+.font-opensans{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.bg-2c3e50ff{
+    background-color: #2c3e50ff;
+}
+
+.bg-f6f6f6ff{
+    background-color: #f6f6f6ff;
+}
+.margin-left-right{
+    margin: 0px 10px 0px 10px;
+}
+/*글자 하얀색*/
+.text-white{
+    color: white;
+}
+
+.text-333333{
+    color:#333333;
+}
+
+div{
+    width: 100%;
+    height:100%;
+}
+
+/*화면 사이즈*/
+.grid0{
+    width: 100%;
+    background-color:#2c3e50ff;
+}
+.grid1{
+    width: 30%;
+    background-color:#2c3e50ff;
+}
+.grid2{
+    width: 70%;
+    background-color:#f6f6f6ff;
+}
+
+
+.padding0{
+    padding: 10px 0;
+}
+
+
+/*페이지네이션*/
+.pagination {
+    justify-content: center;
+    align-items: center;
+}
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
