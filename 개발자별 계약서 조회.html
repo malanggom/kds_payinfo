@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="./cssfile.css">
     <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./main.js">
     <style>
         div {
             height: 100%;
@@ -25,7 +26,7 @@
         body {
             background-color: orange;
         }
-        
+
 
         /* desktop 규격 */
         @media screen and (min-width: 1024px) {
@@ -48,95 +49,113 @@
             }
         }
     </style>
-
 </head>
+
 
 <body style="margin: 0px;">
     <div class="grid-container">
-
-        <div class="flex-div grid-item item-header bg-2c3e50ff text-white font-opensans-logo">
-            <div class="flex-div">
+        <div class="item-logo bg-2c3e50ff text-white font-opensans-logo">
+            <div class="flex-logo">
                 K D S
             </div>
+            <div class="flex-logo-logout">
+                로그아웃
+            </div>
         </div>
-        <div class="flex-div grid-item item-header1 bg-f6f6f6ff text-white">
+        <div class="item-header bg-f6f6f6ff text-white">
+            <div class="flex-tabs bg-f6f6f6ff text-333333">개발자조회<br>
+                개발자관리 > 개발자조회
+            </div>
         </div>
+        <div class="item-tabs bg-2c3e50ff"><button onclick="clickTabs()"
+                class="bg-2c3e50ff noLine text-white font-opensans">
+                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">개발자관리</div>
+                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">고객사관리</div>
+                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">프로젝트관리</div>
+                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">입출금관리</div>
+                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">세금계산서관리</div>
+                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">원천세관리</div>
+                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">기기관리</div>
+            </button>
+        </div>
+        <!-- <div id="toggle">
+            <div class="flex-tabs item-tabs0 bg-2c3e50ff text-white font-opensans" href="개발자조회.html"><button
+                    class="bg-2c3e50ff noLine text-white font-opensans">
+                    개발자조회</button></div>
+            <div class="flex-tabs item-tabs1 bg-2c3e50ff text-white font-opensans" href="개발자별 계약서 조회.html">
+                <button class="bg-2c3e50ff noLine text-white font-opensans">개발자별 계약서 조회</button></div>
+            </div> -->
+        <!--         
+            <div class="flex-tabs item-tabs3 bg-2c3e50ff text-white font-opensans" href="고객사별 조회.html">고객사별 조회
+            </div>
+            <div class="flex-tabs item-tabs4 bg-2c3e50ff text-white font-opensans" href="고객사별 계약서 조회.html">고객사별 계약서
+                조회</div>
+            <div class="flex-tabs item-tabs5 bg-2c3e50ff text-white font-opensans" href="고객사별 담당자 조회.html">고객사별 담당자
+                조회</div> -->
+        <!-- <div class="flex-tabs item-tabs7 bg-2c3e50ff text-white font-opensans" href="프로젝트 조회.html">프로젝트 조회
+            </div>
+            <div class="flex-tabs item-tabs8 bg-2c3e50ff text-white font-opensans" href="프로젝트별 개발자 조회.html">프로젝트별
+                개발자 조회
+            </div> -->
+        <!-- <div class="flex-tabs item-tabs10 bg-2c3e50ff text-white font-opensans" href="입금관리.html">입금관리</div>
+            <div class="flex-tabs item-tabs11 bg-2c3e50ff text-white font-opensans" href="출금관리.html">출금관리</div> -->
+        <!-- <div class="flex-tabs item-tabs13 bg-2c3e50ff text-white font-opensans" href="매입세금계산서 조회.html">매입세금계산서
+                조회</div>
+            <div class="flex-tabs item-tabs14 bg-2c3e50ff text-white font-opensans" href="매출세금계산서 조회.html">매출세금계산서
+                조회</div> -->
+        <!-- <div class="flex-tabs item-tabs16 bg-2c3e50ff text-white font-opensans" href="원천세조회.html">원천세조회</div> -->
+        <!-- <div class="flex-tabs item-tabs18 bg-2c3e50ff text-white font-opensans" href="기기관리.html">기기조회</div> -->
 
-        <div class="flex-div grid-item item-tabs bg-2c3e50ff text-white font-opensans">개발자관리</div>
-        <div class="flex-div grid-item item-tabs0 bg-2c3e50ff text-white font-opensans" href="개발자조회.html">개발자조회</div>
-        <div class="flex-div grid-item item-tabs1 bg-2c3e50ff text-white font-opensans" href="개발자별 계약서 조회.html">개발자별 계약서
-            조회</div>
-        <div class="flex-div grid-item item-tabs2 bg-2c3e50ff text-white font-opensans">고객사관리</div>
-        <div class="flex-div grid-item item-tabs3 bg-2c3e50ff text-white font-opensans" href="고객사별 조회.html">고객사별 조회
+        <div class="item-main bg-f6f6f6ff text-333333">
+            <div class="flex-main">
+                <div class="flex-main-item">
+                    <button class="button-background-white margin-left-right">전체</button>
+                    <button class="button-background-white margin-left-right">프로젝트투입</button>
+                    <button class="button-background-white margin-left-right">계약서</button>
+                    <button class="button-background-white margin-left-right">근로/사업소득</button>
+                    <button class="button-background-white margin-left-right">년차</button>
+                    <button class="button-background-white margin-left-right">직책</button>
+                    <button class="button-background-white margin-left-right">직급</button>
+                    <button class="button-background-white margin-left-right">직무</button>
+                    <button class="button-background-white margin-left-right">스킬</button>
+                    <button class="button-background-white margin-left-right">언어</button>
+                    <button class="button-background-white margin-left-right">컨텍루트</button>
+                    <button class="button-background-white margin-left-right">초기화</button>
+                </div>
+                <div class="flex-main-item">
+                    <input type="text" placeholder="">
+                    <button class="button-background-white">검색</button>
+                    <button class="button-background-white">개발자추가</button>
+                    <button class="button-background-white">100개씩</button>
+                    <button class="button-background-white">10개씩</button>
+                    <button class="button-background-white">25개씩</button>
+                    <button class="button-background-white">50개씩</button>
+                    <button class="button-background-white">75개씩</button>
+                </div>
+                <div class="flex-main-item pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
         </div>
-        <div class="flex-div grid-item item-tabs4 bg-2c3e50ff text-white font-opensans" href="고객사별 계약서 조회.html">고객사별 계약서
-            조회</div>
-        <div class="flex-div grid-item item-tabs5 bg-2c3e50ff text-white font-opensans" href="고객사별 담당자 조회.html">고객사별 담당자
-            조회</div>
-        <div class="flex-div grid-item item-tabs6 bg-2c3e50ff text-white font-opensans">프로젝트관리</div>
-        <div class="flex-div grid-item item-tabs7 bg-2c3e50ff text-white font-opensans" href="프로젝트 조회.html">프로젝트 조회
-        </div>
-        <div class="flex-div grid-item item-tabs8 bg-2c3e50ff text-white font-opensans" href="프로젝트별 개발자 조회.html">프로젝트별
-            개발자 조회
-        </div>
-        <div class="flex-div grid-item item-tabs9 bg-2c3e50ff text-white font-opensans">입출금관리</div>
-        <div class="flex-div grid-item item-tabs10 bg-2c3e50ff text-white font-opensans" href="입금관리.html">입금관리</div>
-        <div class="flex-div grid-item item-tabs11 bg-2c3e50ff text-white font-opensans" href="출금관리.html">출금관리</div>
-        <div class="flex-div grid-item item-tabs12 bg-2c3e50ff text-white font-opensans">세금계산서관리</div>
-        <div class="flex-div grid-item item-tabs13 bg-2c3e50ff text-white font-opensans" href="매입세금계산서 조회.html">매입세금계산서
-            조회</div>
-        <div class="flex-div grid-item item-tabs14 bg-2c3e50ff text-white font-opensans" href="매출세금계산서 조회.html">매출세금계산서
-            조회</div>
-        <div class="flex-div grid-item item-tabs15 bg-2c3e50ff text-white font-opensans">원천세관리</div>
-        <div class="flex-div grid-item item-tabs16 bg-2c3e50ff text-white font-opensans" href="원천세조회.html">원천세조회</div>
-        <div class="flex-div grid-item item-tabs17 bg-2c3e50ff text-white font-opensans">기기관리</div>
-        <div class="flex-div grid-item item-tabs18 bg-2c3e50ff text-white font-opensans" href="기기관리.html">기기조회</div>
-
-
-        <div class="flex-div grid-item item-main bg-f6f6f6ff text-333333">개발자조회</div>
-        <div class="flex-div grid-item item-main1 bg-f6f6f6ff text-333333">개발자관리 > 개발자조회</div>
-
-        <div class="flex-div grid-item item-main2 bg-f6f6f6ff text-333333">
-            <button class="button-background-white margin-left-right">전체</button>
-            <button class="button-background-white margin-left-right">프로젝트투입</button>
-            <button class="button-background-white margin-left-right">계약서</button>
-            <button class="button-background-white margin-left-right">근로/사업소득</button>
-            <button class="button-background-white margin-left-right">년차</button>
-            <button class="button-background-white margin-left-right">직책</button>
-            <button class="button-background-white margin-left-right">직급</button>
-            <button class="button-background-white margin-left-right">직무</button>
-            <button class="button-background-white margin-left-right">스킬</button>
-            <button class="button-background-white margin-left-right">언어</button>
-            <button class="button-background-white margin-left-right">컨텍루트</button>
-            <button class="button-background-white margin-left-right">초기화</button>
-        </div>
-
-        <div class="flex-div grid-item item-main3 bg-f6f6f6ff text-333333">
-            <input type="text" placeholder="">
-            <button class="button-background-white">검색</button>
-            <button class="button-background-white">개발자추가</button>
-            <button class="button-background-white">100개씩</button>
-            <button class="button-background-white">10개씩</button>
-            <button class="button-background-white">25개씩</button>
-            <button class="button-background-white">50개씩</button>
-            <button class="button-background-white">75개씩</button>
-        </div>
-
-        <div class="flex-div grid-item item-main4 bg-f6f6f6ff pagination">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">&raquo;</a>
-        </div>
-
-        <div class="flex-div grid-item item-main5 bg-f6f6f6ff text-white">
-        </div>
-
     </div>
+
+    <script>
+        function clickTabs() {
+            if (document.getElementById('toggle').style.display === 'block') {
+                document.getElementById('toggle').style.display = 'none';
+            } else {
+                document.getElementById('toggle').style.display = 'block';
+            }
+        }
+    </script>
+
 </body>
 
 </html>
