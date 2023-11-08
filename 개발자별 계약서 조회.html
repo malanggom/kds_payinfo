@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./cssfile.css">
     <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./main.js">
+    <script src="https://kit.fontawesome.com/16c1215ef1.js" crossorigin="anonymous"></script>
     <style>
         div {
             height: 100%;
@@ -53,38 +54,38 @@
 
 
 <body style="margin: 0px;">
+
     <div class="grid-container">
         <div class="item-logo bg-2c3e50ff text-white font-opensans-logo">
-            <div class="flex-logo">
-                K D S
+            <div class="flexLogoText padding25">
+                한국데이타시스템
             </div>
-            <div class="flex-logo-logout">
-                로그아웃
-            </div>
+            <!-- <div class="flexLogoButton">
+                <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+            </div> -->
         </div>
         <div class="item-header bg-f6f6f6ff text-white">
-            <div class="flex-tabs bg-f6f6f6ff text-333333">개발자조회<br>
-                개발자관리 > 개발자조회
-            </div>
+            <div class="flexHeader padding25 bg-f6f6f6ff text-333333">개발자관리 > 개발자조회</div>
         </div>
-        <div class="item-tabs bg-2c3e50ff"><button onclick="clickTabs()"
-                class="bg-2c3e50ff noLine text-white font-opensans">
-                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">개발자관리</div>
-                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">고객사관리</div>
-                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">프로젝트관리</div>
-                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">입출금관리</div>
-                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">세금계산서관리</div>
-                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">원천세관리</div>
-                <div class="flex-tabs-image padding">ima</div><div class="flex-tabs-text padding">기기관리</div>
-            </button>
+        <div class="item-tabs bg-2c3e50ff text-white">
+            <div class="flex-tabs-text padding toggle">개발자관리</div><div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div id="Toggle" style="display: none;">
+                <div class="flex-tabs item-tabs0 bg-2c3e50ff text-white font-opensans" href="개발자조회.html"><button
+                        class="bg-2c3e50ff noLine text-white font-opensans">
+                        개발자조회</button></div>
+                <div class="flex-tabs item-tabs1 bg-2c3e50ff text-white font-opensans" href="개발자별 계약서 조회.html">
+                    <button class="bg-2c3e50ff noLine text-white font-opensans">개발자별 계약서 조회</button></div>
+                </div>
+            <div class="flex-tabs-text padding" id="clickTabs2">고객사관리</div><div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div class="flex-tabs-text padding">프로젝트관리</div><div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div class="flex-tabs-text padding">입출금관리</div><div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div class="flex-tabs-text padding">세금계산서관리</div><div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div class="flex-tabs-text padding">원천세관리</div><div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div class="flex-tabs-text padding">기기관리</div><div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div class="flex-tabs-text padding">로그아웃</div>
+            
         </div>
-        <!-- <div id="toggle">
-            <div class="flex-tabs item-tabs0 bg-2c3e50ff text-white font-opensans" href="개발자조회.html"><button
-                    class="bg-2c3e50ff noLine text-white font-opensans">
-                    개발자조회</button></div>
-            <div class="flex-tabs item-tabs1 bg-2c3e50ff text-white font-opensans" href="개발자별 계약서 조회.html">
-                <button class="bg-2c3e50ff noLine text-white font-opensans">개발자별 계약서 조회</button></div>
-            </div> -->
+        <!--  -->
         <!--         
             <div class="flex-tabs item-tabs3 bg-2c3e50ff text-white font-opensans" href="고객사별 조회.html">고객사별 조회
             </div>
@@ -132,6 +133,10 @@
                     <button class="button-background-white">50개씩</button>
                     <button class="button-background-white">75개씩</button>
                 </div>
+                <div class="flex-main-item">
+                    <form action=""></form>
+                    
+                </div>
                 <div class="flex-main-item pagination">
                     <a href="#">&laquo;</a>
                     <a href="#">1</a>
@@ -147,14 +152,31 @@
     </div>
 
     <script>
-        function clickTabs() {
-            if (document.getElementById('toggle').style.display === 'block') {
-                document.getElementById('toggle').style.display = 'none';
+        const toggle = document.querySelector(".toggle");
+        const Toggle = document.getElementById("Toggle");
+        toggle.addEventListener("click", () => {
+            if (Toggle.style === ) {
+                
             } else {
-                document.getElementById('toggle').style.display = 'block';
+                
             }
-        }
-    </script>
+            Toggle.style.cssText="display:";
+        });
+        // const clickTabs= document.getElementById("clickTabs");
+        // const clickTabs2= document.getElementById("clickTabs2");
+        
+    
+        // clickTabs.addEventListener("click", () => {
+        //     clickTabs.classList.toggle("clickTabs");
+        // });
+
+        // function append() {
+        //   const node = document.createElement("div");
+        //   node.innerHTML="개발자조회";
+        //   node.className='flex-tabs-text padding';
+        //   document.querySelector("#clickTabsParent").insertBefore(node,clickTabs2);   
+        // }  
+      </script>
 
 </body>
 
