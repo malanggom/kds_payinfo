@@ -75,9 +75,14 @@
     padding: 0px 0px 0px 20px;
 }
 
-/*좌 40px 패딩*/
+/*좌 25px 패딩*/
 .padding25{
     padding: 0px 0px 0px 25px;
+}
+
+/*좌우 25px 패딩*/
+.marginLR25{
+    margin: 0px 0px 25px 25px;
 }
 
 /*div 사이즈*/
@@ -89,5 +94,51 @@ div{
 .imgsize{
     width: 30px;
     height: 30px;
+}
+
+button{
+    height: 30px;
+    /*텍스트 줄바꿈 방지*/
+    white-space : nowrap;
+}
+
+#menuToggle{
+    display: none;
+}
+#menuToggle1{
+    display: none;
+}
+#menuToggle2{
+    display: none;
+}
+#menuToggle3{
+    display: none;
+}
+#menuToggle4{
+    display: none;
+}
+#menuToggle5{
+    display: none;
+}
+#menuToggle6{
+    display: none;
+}
+#menuToggle7{
+    display: none;
+}
+#menuToggle8{
+    display: none;
+}
+#menuToggle9{
+    display: none;
+}
+#menuToggle10{
+    display: none;
+}
+#menuToggle11{
+    display: none;
+}
+#menuToggle12{
+    display: none;
 }
 /*-------------------------기능-------------------------*/

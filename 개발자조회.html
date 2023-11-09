@@ -1,51 +1,172 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html style="padding: 0px; margin: 0px;">
 
-        <link rel="stylesheet" href="./cssfile.css">
-        <style>
+<head>
 
-            div{
-                height : 100%;
-                float:left;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./cssfile.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./main.js">
+    <script src="https://kit.fontawesome.com/16c1215ef1.js" crossorigin="anonymous"></script>
+    <style>
+        div {
+            height: 100%;
+            float: left;
+        }
+
+        /* 모든기기공통 CSS */
+        body {
+            background-color: orange;
+        }
+
+
+        /* desktop 규격 */
+        @media screen and (min-width: 1024px) {
+            body {
+                background-color: lightblue;
             }
+        }
 
-            /* 모든기기공통 CSS */
-            body{ background-color: orange; }
-
-            /* desktop 규격 */
-            @media screen and (min-width: 1024px){
-                body{ background-color: lightblue; }
+        /* tablet 규격 */
+        @media screen and (max-width: 1023px) {
+            body {
+                background-color: pink;
             }
+        }
 
-            /* tablet 규격 */
-            @media screen and (max-width: 1023px){
-                body{ background-color: pink; }
+        /* mobile 규격 */
+        @media screen and (max-width: 767px) {
+            body {
+                background-color: navy;
             }
+        }
+    </style>
+</head>
 
-            /* mobile 규격 */
-            @media screen and (max-width: 767px){
-                body{ background-color: navy; }
-            }
-        </style>
-        
-    </head>
-    <body>
-        <div class="grid1"><div class="" style="color: #ffffff;">KDS</div>
-            <div class="" "><a href="개발자조회.html" style="color: #ffffff;">개발자관리</a></div>
-            <div class="" "><a href="개발자조회.html" style="color: #ffffff;">개발자조회</a></div>
-            <div class="" "><a href="개발자별 계약서 조회.html" style="color: #ffffff;">개발자별 계약서 조회</a></div>
-            <div class="" "><a href="개발자별 계약서 조회.html" style="color: #ffffff;"></a>고객사관리</a></div>
-            <div class="" "><a href="개발자별 계약서 조회.html" style="color: #ffffff;"></a>프로젝트관리</a></div>
-            <div class="" "><a href="개발자별 계약서 조회.html" style="color: #ffffff;"></a>입출금관리</a></div>
-            <div class="" "><a href="개발자별 계약서 조회.html" style="color: #ffffff;"></a>세금계산서관리</a></div>
-            <div class="" "><a href="개발자별 계약서 조회.html" style="color: #ffffff;"></a>원천세관리</a></div>
-            <div class="" "><a href="기기관리.html" style="color: #ffffff;"></a>기기관리</a></div>
+
+<body style="margin: 0px;">
+
+    <div class="grid-container">
+        <div class="item-logo bg-2c3e50ff text-white font-opensans-logo">
+            <div class="flexLogoText">
+                한국데이타시스템
+            </div>
         </div>
-        
-        <div class="grid2">둘</div>
-    </body>
+        <div class="item-header">
+            <div class="flexHeader">개발자관리 > 개발자조회</div>
+        </div>
+        <div class="item-tabs">
+            <div class="flexTabsText" id="menuToggle0">개발자관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm"
+                    style="color: #ffffff;"></i></div>
+            <div id="menuToggle" class="flexTabsText"><a href="개발자조회.html">개발자조회</a></div>
+            <div id="menuToggle1" class="flexTabsText"><a href="개발자별 계약서 조회.html">개발자별 계약서 조회</a></div>
+
+            <div class="flexTabsText" id="menuToggleCustomer">고객사관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div id="menuToggle2" class="flexTabsText"><a href="고객사조회.html">고객사조회</a></div>
+            <div id="menuToggle3" class="flexTabsText"><a href="고객사별 계약서 조회.html">고객사별 계약서 조회</a></div>
+            <div id="menuToggle4" class="flexTabsText"><a href="고객사별 담당자 조회.html">고객사별 담당자 조회</a></div>
+
+            <div class="flexTabsText" id="menuToggleProject">프로젝트관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div id="menuToggle5" class="flexTabsText"><a href="프로젝트 조회.html">프로젝트 조회</a></div>
+            <div id="menuToggle6" class="flexTabsText"><a href="프로젝트별 개발자 조회.html">프로젝트별 개발자 조회</a></div>
+
+            <div class="flexTabsText" id="menuToggleBank">입출금관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div id="menuToggle7" class="flexTabsText"><a href="입금관리.html">입금관리</a></div>
+            <div id="menuToggle8" class="flexTabsText"><a href="출금관리.html">출금관리</a></div>
+
+            <div class="flexTabsText" id="menuToggleTaxBs">세금계산서관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div id="menuToggle9" class="flexTabsText"><a href="매입세금계산서 조회.html">매입세금계산서 조회</a></div>
+            <div id="menuToggle10" class="flexTabsText"><a href="매출세금계산서 조회.html">매출세금계산서 조회</a></div>
+
+            <div class="flexTabsText" id="menuToggleTax">원천세관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div id="menuToggle11" class="flexTabsText"><a href="원천세조회.html">원천세조회</a></div>
+
+            <div class="flexTabsText" id="menuToggleMachine">기기관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm" style="color: #ffffff;"></i></div>
+            <div id="menuToggle12" class="flexTabsText"><a href="기기조회.html">기기조회</a></div>
+
+            <div class="flexTabsText">로그아웃</div>
+
+        </div>
+        <!--  -->
+        <!--  -->
+
+        <div class="item-main bg-f6f6f6ff text-333333">
+            <div class="flex-main">
+                <div class="flex-main-item" style="justify-content: space-evenly;">
+                    <button class="button-background-white margin-left-right" style="white-space : nowrap;">전체</button>
+                    <button class="button-background-white margin-left-right">프로젝트투입</button>
+                    <button class="button-background-white margin-left-right">계약서</button>
+                    <button class="button-background-white margin-left-right">근로/사업소득</button>
+                    <button class="button-background-white margin-left-right">년차</button>
+                    <button class="button-background-white margin-left-right">직책</button>
+                    <button class="button-background-white margin-left-right">직급</button>
+                    <button class="button-background-white margin-left-right">직무</button>
+                    <button class="button-background-white margin-left-right">스킬</button>
+                    <button class="button-background-white margin-left-right">언어</button>
+                    <button class="button-background-white margin-left-right">컨텍루트</button>
+                    <button class="button-background-white margin-left-right">초기화</button>
+                </div>
+                <div class="flex-main-item">
+
+                    <input type="text" placeholder="">
+                    <button class="button-background-white">검색</button>
+                    <button class="button-background-white">개발자추가</button>
+                    <button class="button-background-white">100개씩</button>
+                    <button class="button-background-white">10개씩</button>
+                    <button class="button-background-white">25개씩</button>
+                    <button class="button-background-white">50개씩</button>
+                    <button class="button-background-white">75개씩</button>
+                </div>
+                <div class="flexMainList">
+                    <form action="" style="width: fit-content; height: fit-content;">
+                        <fieldset>
+                            <div>
+                                <label>아이디</label>
+
+                            </div>
+                            <div>
+                                <label>비밀번호</label>
+
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </div>
+                <div class="flexMainPagenation">
+                    <div class=" pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="main.js">
+    </script>
+
+</body>
+
 </html>
