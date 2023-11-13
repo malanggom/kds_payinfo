@@ -1,42 +1,43 @@
 /*-------------------------폰트-------------------------*/
 /*글자 오픈산스*/
-.font-opensans-logo{
+.font-opensans-logo {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: medium;
 }
 
-.font-opensans{
+.font-opensans {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: medium;
 }
 
 /*글자 하얀색*/
-.text-white{
+.text-white {
     color: white;
 }
 
-.text-333333{
-    color:#333333;
+.text-333333 {
+    color: #333333;
 }
 
 /*-------------------------폰트-------------------------*/
 
 /*-------------------------배경-------------------------*/
-.bg-2c3e50ff{
+.bg-2c3e50ff {
     background-color: #2c3e50ff;
 }
 
-.bg-f6f6f6ff{
+.bg-f6f6f6ff {
     background-color: #f6f6f6ff;
 }
 
 /*버튼 배경색*/
-.button-background-white{
+.button-background-white {
     background-color: white;
     border-radius: 4px;
 }
+
 /*-------------------------배경-------------------------*/
 
 /*-------------------------기능-------------------------*/
@@ -45,7 +46,7 @@
     justify-content: center;
     align-items: center;
 }
-  
+
 .pagination a {
     color: black;
     float: left;
@@ -58,87 +59,54 @@
 /*토글*/
 #toggle {
     display: none;
-  }
+}
 
 /*선 없애기*/
-.noLine{
-    border:none;
+.noLine {
+    border: none;
 }
 
 /*좌우 10px 마진*/
-.margin-left-right{
+.margin-left-right {
     margin: 0px 10px 0px 10px;
 }
 
 /*좌 20px 패딩*/
-.padding{
+.padding {
     padding: 0px 0px 0px 20px;
 }
 
 /*좌 25px 패딩*/
-.padding25{
+.padding25 {
     padding: 0px 0px 0px 25px;
 }
 
 /*좌우 25px 패딩*/
-.marginLR25{
+.marginLR25 {
     margin: 0px 0px 25px 25px;
 }
 
 /*div 사이즈*/
-div{
+div {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-.imgsize{
+.imgsize {
     width: 30px;
     height: 30px;
 }
 
-button{
+button {
     height: 30px;
     /*텍스트 줄바꿈 방지*/
-    white-space : nowrap;
+    white-space: nowrap;
 }
 
-#menuToggle{
-    display: none;
+a {
+    color: white;
+    text-decoration-line: none;
+    display: inline-block;
 }
-#menuToggle1{
-    display: none;
-}
-#menuToggle2{
-    display: none;
-}
-#menuToggle3{
-    display: none;
-}
-#menuToggle4{
-    display: none;
-}
-#menuToggle5{
-    display: none;
-}
-#menuToggle6{
-    display: none;
-}
-#menuToggle7{
-    display: none;
-}
-#menuToggle8{
-    display: none;
-}
-#menuToggle9{
-    display: none;
-}
-#menuToggle10{
-    display: none;
-}
-#menuToggle11{
-    display: none;
-}
-#menuToggle12{
-    display: none;
-}
+
 /*-------------------------기능-------------------------*/

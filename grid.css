@@ -101,12 +101,75 @@
     width: 30px;
 }
 
+.flexTabsTextParent {
+    display: block;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent2 {
+    display: block;
+    align-items: center;
+    height: 150px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent3 {
+    display: block;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent4 {
+    display: block;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent5 {
+    display: block;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent6 {
+    display: block;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent7 {
+    display: block;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
 .flexTabsText {
     display: flex;
     align-items: center;
     height: 50px;
     width: 180px;
     padding: 0px 0px 0px 20px;
+}
+
+.flexTabsChild {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
 }
 
 .flex-main {
