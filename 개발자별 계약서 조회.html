@@ -62,7 +62,9 @@
             </div>
         </div>
         <div class="item-header">
-            <div class="flexHeader">개발자관리 > 개발자조회</div>
+            <div class="flexHeader">
+                <div class="flexHeaderChild mgL10">개발자관리 > 개발자조회</div>
+            </div>
         </div>
         <div class="item-tabs">
             <div class="flexTabsText" id="menuToggleDev">개발자관리</div>
@@ -122,41 +124,195 @@
 
         <div class="item-main bg-f6f6f6ff text-333333">
             <div class="flex-main">
-                <div class="flex-main-item" style="justify-content: space-evenly;">
-                    <button class="button-background-white margin-left-right" style="white-space : nowrap;">전체</button>
-                    <button class="button-background-white margin-left-right">프로젝트투입</button>
-                    <button class="button-background-white margin-left-right">계약서</button>
-                    <button class="button-background-white margin-left-right">근로/사업소득</button>
-                    <button class="button-background-white margin-left-right">년차</button>
-                    <button class="button-background-white margin-left-right">직책</button>
-                    <button class="button-background-white margin-left-right">직급</button>
-                    <button class="button-background-white margin-left-right">직무</button>
-                    <button class="button-background-white margin-left-right">스킬</button>
-                    <button class="button-background-white margin-left-right">언어</button>
-                    <button class="button-background-white margin-left-right">컨텍루트</button>
-                    <button class="button-background-white margin-left-right">초기화</button>
+                <div class="flexMainItem">
+                    <button class="btnCard" id="flexBtnPj">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">프로젝트투입</div>
+                            <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnContract">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">계약서</div>
+                            <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnWhtaxVat">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">근로/사업 소득</div>
+                            <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnYear">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">년차</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnPosition">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">직책</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnRank">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">직급</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnJobtitle">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">직무</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnSkill">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">스킬</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnLanguage">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">언어</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnContactRoot">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">컨텍루트</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard">
+                        <div class="flexBtnParent">
+                        <div class="flexBtn">초기화</div>
+                        </div>
+                    </button>
                 </div>
-                <div class="flex-main-item">
 
-                    <input type="text" placeholder="">
-                    <button class="button-background-white">검색</button>
-                    <button class="button-background-white">개발자추가</button>
-                    <button class="button-background-white">100개씩</button>
-                    <button class="button-background-white">10개씩</button>
-                    <button class="button-background-white">25개씩</button>
-                    <button class="button-background-white">50개씩</button>
-                    <button class="button-background-white">75개씩</button>
+                <div class="flexMainItemChild">
+                    <button class="btnCardHidden" id="flexBtnChild" style="visibility: hidden;"><div class="flexBtnParent">
+                        <div class="flexBtn">프로젝트투입</div>
+                        <div class="flexBtn">
+                            <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild2" style="visibility: hidden;"><div class="flexBtnParent">
+                        <div class="flexBtn">계약서</div>
+                        <div class="flexBtn">
+                            <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild3" style="visibility: hidden;"><div class="flexBtnParent">
+                        <div class="flexBtn">근로/사업 소득</div>
+                        <div class="flexBtn">
+                            <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild4" style="visibility: hidden;"><div class="flexBtnParent">
+                        <div class="flexBtn">년차</div>
+                        <div class="flexBtn">
+                            <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild5" style="visibility: hidden;"><div class="flexBtnParent">
+                        <div class="flexBtn">직책</div>
+                        <div class="flexBtn">
+                            <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild6" style="visibility: hidden;"><div class="flexBtnParent">
+                        <div class="flexBtn">직급</div>
+                        <div class="flexBtn">
+                            <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild7" style="visibility: hidden;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">직무</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild8" style="visibility: hidden;"><div class="flexBtnParent">
+                        <div class="flexBtn">스킬</div>
+                        <div class="flexBtn">
+                            <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild9" style="visibility: hidden;"><div class="flexBtnParent">
+                        <div class="flexBtn">언어</div>
+                        <div class="flexBtn">
+                            <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild10" style="visibility: hidden;">
+                        <div class="flexBtnParent">
+                        <div class="flexBtn">컨텍루트</div>
+                        <div class="flexBtn">
+                            <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild11" style="visibility: hidden;"><div class="flexBtnParent">
+                        <div class="flexBtn">초기화</div>
+                    </button>
                 </div>
+
+                <div class="flexMainItemSearch">
+                    <div class="flexMainItemSearchChild">
+                        <input type="text" placeholder=""class="mgL10">
+                        <button class="flexBtnSearch mgL10">검색</button>
+                        <button class="flexBtnSearch mgL10">개발자추가</button>
+                    </div>
+                    <div class="flexMainItemSearchChildRight">
+                        <div class="flexMainItemSearchChildRightChild">
+                            <button class="flexBtnSearch">10개씩</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flexMainItemSearchHidden">
+                    <div class="flexMainItemSearchChild">
+                        <input type="text" placeholder=""class="mgL10" style="visibility: hidden;">
+                        <button class="flexBtnSearch mgL10" style="visibility: hidden;">검색</button>
+                        <button class="flexBtnSearch mgL10" style="visibility: hidden;">개발자추가</button>
+                    </div>
+                    <div class="flexMainItemSearchChildRight">
+                        <div class="flexMainItemSearchChildRightChild">
+                            <button class="flexBtnSearch">10개씩</button>
+                            <button class="flexBtnSearch" style="visibility: hidden;">10개씩</button>
+                            <button class="flexBtnSearch" style="visibility: hidden;">25개씩</button>
+                            <button class="flexBtnSearch" style="visibility: hidden;">50개씩</button>
+                            <button class="flexBtnSearch" style="visibility: hidden;">75개씩</button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="flexMainList">
                     <form action="" style="width: fit-content; height: fit-content;">
                         <fieldset>
                             <div>
                                 <label>아이디</label>
-
                             </div>
                             <div>
                                 <label>비밀번호</label>
-
                             </div>
                         </fieldset>
                     </form>
