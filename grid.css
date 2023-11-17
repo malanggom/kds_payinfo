@@ -90,7 +90,14 @@
     display: flex;
     align-items: center;
     background-color: #f6f6f6ff;
-    color:#333333;
+    color: #333333;
+}
+
+.flexHeaderChild {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6ff;
+    color: #333333;
 }
 
 .flexTabsImage {
@@ -178,10 +185,88 @@
     flex-direction: column;
 }
 
-.flex-main-item {
+.flexMainItem {
+    display: flex;
+    align-items: end;
+    height: 80px;
+}
+
+.flexMainItemSearch {
+    display: flex;
+    align-items: end;
+    height: 80px;
+}
+
+.flexMainItemSearchChild {
+    display: flex;
+    align-items: end;
+    height: 80px;
+}
+
+.flexMainItemSearchHidden {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 0px;
+}
+
+.flexMainItemSearchChildRight {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 0px;
+}
+
+.flexMainItemSearchChildRightChild {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 10px;
+}
+.flexMainItemSearchChildRightChildHidden {
+    position: relative;
+    top: 40px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 10px;
+}
+.flexMainItemSearchChildRightChildHidden2 {
+    position: relative;
+    top: 80px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 10px;
+}
+.flexMainItemSearchChildRightChildHidden3 {
+    position: relative;
+    top: 120px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 10px;
+}
+.flexMainItemSearchChildRightChildHidden4 {
+    position: relative;
+    top: 160px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 10px;
+}
+.flexMainItemSearchChildRightChildHidden5 {
+    position: relative;
+    top: 200px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+.flexMainItemChild {
+    display: flex;
+    align-items: center;
+    height: 0px;
 }
 
 .flexMainList {
