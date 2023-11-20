@@ -90,7 +90,14 @@
     display: flex;
     align-items: center;
     background-color: #f6f6f6ff;
-    color:#333333;
+    color: #333333;
+}
+
+.flexHeaderChild {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6ff;
+    color: #333333;
 }
 
 .flexTabsImage {
@@ -101,6 +108,62 @@
     width: 30px;
 }
 
+.flexTabsTextParent {
+    display: block;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent2 {
+    display: block;
+    align-items: center;
+    height: 150px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent3 {
+    display: block;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent4 {
+    display: block;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent5 {
+    display: block;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent6 {
+    display: block;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent7 {
+    display: block;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
 .flexTabsText {
     display: flex;
     align-items: center;
@@ -109,16 +172,61 @@
     padding: 0px 0px 0px 20px;
 }
 
+.flexTabsChild {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
 .flex-main {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.flex-main-item {
+.flexMainItem {
+    display: flex;
+    align-items: end;
+    height: 80px;
+}
+
+.flexMainItemSearch {
+    display: flex;
+    align-items: end;
+    height: 80px;
+}
+
+.flexMainItemSearchChild {
+    display: flex;
+    align-items: end;
+    height: 80px;
+}
+
+.flexMainItemSearchHidden {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 0px;
+}
+
+.flexMainItemSearchChildRight {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 80px;
+}
+
+.flexMainItemSearchChildRightChild {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+.flexMainItemChild {
+    display: flex;
+    align-items: center;
+    height: 0px;
 }
 
 .flexMainList {
