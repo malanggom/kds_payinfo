@@ -1,4 +1,12 @@
 /*-------------------------그리드-------------------------*/
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin:0;
+}
+
 .logo {
     grid-area: logo;
 }
@@ -22,17 +30,17 @@
     grid-template-rows: 50px 1fr;
 
     /*그리드 컬럼 250px 고정, */
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: minmax(250px, 15%) 85%;
+
 
     /*세로 가운데 정렬*/
     align-items: center;
 
     /*화면 높이 100% 채우기*/
-    height: 100vh;
-    width: 100%;
+    height: 100%;
 
     grid-template-areas:
-        "logo header"
+        "logo          header"
         "sidebar main-content";
 }
 
@@ -61,6 +69,7 @@
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
 
 /*-------------------------그리드-------------------------*/
 
@@ -181,7 +190,6 @@
 
 .flex-main {
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -221,6 +229,7 @@
     align-items: end;
     justify-content: end;
     margin-right: 10px;
+    z-index: 1;
 }
 
 .flexMainItemChild {
@@ -230,17 +239,17 @@
 }
 
 .flexMainList {
+    margin-top: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
+    flex-wrap: wrap;
+    height:545px;
 }
 
 .flexMainPagenation {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 100px;
 }
 
 /*-------------------------플렉스-------------------------*/

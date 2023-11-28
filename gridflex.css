@@ -1,0 +1,143 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 50px 1fr 250px;
+
+    grid-template-areas:
+        'headerL header headerR'
+        'mainL    main    mainR'
+        'footerL footer footerR';
+
+    width: 100%;
+    height: 100%;
+}
+
+.headerFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.footerFlex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.pd {
+    padding: 1em;
+}
+
+.pdLR10 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.headerL {
+    grid-area: headerL;
+}
+
+.header {
+    grid-area: header;
+    align-self: center;
+}
+
+.headerR {
+    grid-area: headerR;
+}
+
+.mainL {
+    grid-area: mainL;
+}
+
+.mainR {
+    grid-area: mainR;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footerL {
+    grid-area: footerL;
+}
+
+.footer {
+    grid-area: footer;
+    align-self: center;
+}
+
+.footerR {
+    grid-area: footerR;
+}
+
+.fontOpensansM1000 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 1000;
+    font-size: larger;
+
+    color: white;
+}
+
+.fontOpensansM4 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+
+    color: white;
+}
+
+.fontOpensansS {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: small;
+
+    color: white;
+}
+
+.fontOpensansS4 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: small;
+
+    color: white;
+}
+
+header>div>div>div:nth-child(1) {
+    top: 0;
+    left: 0;
+    right: 0%;
+    transition: 0.1s;
+}
+
+header>div>div>div:hover {
+    border-bottom: white 3px solid;
+    padding-bottom: 14px;
+/* 
+    transition: 0.2s; */
+}
+
+.flexItem {
+    width: 200px;
+    border: 1px solid black;
+}
+
+.filter {
+    filter: brightness(50%)
+}

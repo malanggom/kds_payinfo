@@ -12,6 +12,13 @@
     font-size: medium;
 }
 
+.fontOpensansSm {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: small;
+    color: #434343ff;
+}
+
 /*글자 하얀색*/
 .text-white {
     color: white;
@@ -37,6 +44,7 @@
 /*-------------------------기능-------------------------*/
 /*페이지네이션*/
 .pagination {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -117,13 +125,13 @@ div {
 
 .btnCardHidden {
     position: relative;
-    top: 40px;
+    top: 50px;
     background-color: white;
 
     border: 1px solid #999999ff;
     border-radius: 10px;
 
-    height: 40px;
+    height: 100px;
 
     /*텍스트 줄바꿈 방지*/
     white-space: nowrap;
@@ -134,7 +142,8 @@ div {
 
 .flexBtnParent {
     display: flex;
-    align-items: space-evenly;
+    height: 100%;
+    width: 100%;
 }
 
 .flexBtn {
@@ -143,6 +152,27 @@ div {
     justify-content: center;
     padding: 0px 5px 0px 5px;
     color: #434343ff;
+}
+
+.flexBtnHidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    width: 96px;
+    color: #434343ff;
+    border-radius: 10px;
+}
+
+.flexBtnHiddenStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    height: 25px;
+    color: #434343ff;
+    border: 1px solid #999999ff;
+    border-radius: 10px;
 }
 
 .flexBtnSearch {
@@ -180,3 +210,31 @@ a {
 }
 
 /*-------------------------기능-------------------------*/
+
+table {
+    border-collapse: collapse;
+    border-top: solid 1px #ccccccff;
+    table-layout : fixed;
+    text-overflow: ellipsis; 
+white-space: nowrap;
+}
+
+th {
+    background-color: #ccccccff;
+    border-bottom: solid 1px #ccccccff;
+    text-align: center;
+    padding-left: 21px;
+    padding-right: 21px;
+    /* padding: 1em; */
+}
+
+td {
+    background-color: white;
+    border-bottom: solid 1px #ccccccff;
+    text-align: center;
+    padding-left: 21px;
+    padding-right: 21px;
+    /* padding: 1em; */
+    
+    
+}
