@@ -67,7 +67,7 @@ document.getElementById("menuToggleBank").onclick = function menuToggle(params) 
         toggleitem4.style.display = "none";
     }
 }
-
+ 
 
 document.getElementById("menuToggleTaxBs").onclick = function menuToggle(params) {
     if (toggleitem.style.display === "block" || toggleitem2.style.display === "block" || toggleitem3.style.display === "block" || toggleitem4.style.display === "block"

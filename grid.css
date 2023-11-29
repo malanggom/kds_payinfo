@@ -63,7 +63,7 @@ body{
     background-color: #2c3e50ff;
     color: white;
 }
-
+ 
 /*그리드 메인*/
 .item-main {
     grid-column: 2/3;
