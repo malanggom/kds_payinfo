@@ -1,12 +1,14 @@
 html {
     width: 100%;
     height: 100%;
+    overflow: auto;
 }
 
 body {
     width: 100%;
     height: 100%;
     margin: 0px;
+    overflow: auto;
 }
 
 .container {
@@ -21,9 +23,19 @@ body {
 
     width: 100%;
     height: 100%;
+    overflow: auto;
 }
 
 .headerFlex {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around;
+    justify-content: space-evenly; */
+
+    flex-flow: row nowrap;
+}
+
+.headerMenuFlex {
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
@@ -32,29 +44,49 @@ body {
 .footerFlex {
     display: flex;
     justify-content: space-evenly;
+    flex-flow: row nowrap;
 }
 
 .flex {
     display: flex;
     flex-shrink: 0;
     align-items: center;
+    justify-content: center;
 }
 
 .pd {
     padding: 1em;
 }
 
-.pdLR10 {
-    padding-left: 30px;
-    padding-right: 30px;
+.pdLRLogo {
+    padding-left: 0px;
+    /* padding-right: 200px; */
+}
+
+.pdLR100 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.pdL50 {
+    padding-left: 50px;
+}
+
+.pdR50 {
+    padding-right: 50px;
 }
 
 .headerL {
     grid-area: headerL;
+    justify-self: end;
+    align-self: center;
 }
 
 .header {
     grid-area: header;
+    /* justify-self: space-between; */
+    /* justify-self: space-around; */
+    /* justify-self: space-evenly; */
     align-self: center;
 }
 
@@ -119,23 +151,89 @@ body {
     color: white;
 }
 
-header>div>div>div:nth-child(1) {
+/* header>div>div>div:nth-child(1) {
     top: 0;
     left: 0;
     right: 0%;
     transition: 0.1s;
+} */
+
+header>div:last-child>div:nth-child(3) {
+    min-width: 100px;
+    flex-grow: 1;
 }
 
-header>div>div>div:hover {
+header>div:last-child>div:nth-child(3):hover {
     border-bottom: white 3px solid;
     padding-bottom: 14px;
-/* 
-    transition: 0.2s; */
+    min-width: 100px;
+    flex-grow: 1;
+    transition: 0.1s;
 }
- 
-.flexItem {
-    width: 200px;
-    border: 1px solid black;
+
+header>div:last-child>div:nth-child(4) {
+    min-width: 100px;
+    flex-grow: 1;
+}
+
+header>div:last-child>div:nth-child(4):hover {
+    border-bottom: white 3px solid;
+    padding-bottom: 14px;
+    min-width: 100px;
+    flex-grow: 1;
+    transition: 0.1s;
+}
+
+header>div:last-child>div:nth-child(5) {
+    min-width: 100px;
+    flex-grow: 1;
+}
+
+header>div:last-child>div:nth-child(5):hover {
+    border-bottom: white 3px solid;
+    padding-bottom: 14px;
+    min-width: 100px;
+    flex-grow: 1;
+    transition: 0.1s;
+}
+
+header>div:last-child>div:nth-child(6) {
+    min-width: 100px;
+    flex-grow: 1;
+}
+
+header>div:last-child>div:nth-child(6):hover {
+    border-bottom: white 3px solid;
+    padding-bottom: 14px;
+    min-width: 100px;
+    flex-grow: 1;
+    transition: 0.1s;
+}
+
+header>div:last-child>div:nth-child(7) {
+    min-width: 100px;
+    flex-grow: 1;
+}
+
+header>div:last-child>div:nth-child(7):hover {
+    border-bottom: white 3px solid;
+    padding-bottom: 14px;
+    min-width: 100px;
+    flex-grow: 1;
+    transition: 0.1s;
+}
+
+.aTagDiv {
+    position: relative;
+}
+
+.aTag {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 50px ;
 }
 
 .filter {
