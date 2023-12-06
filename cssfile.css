@@ -46,8 +46,9 @@
 .pagination {
     display: flex;
     justify-content: center;
-    align-self: center;
-    height: 50px;
+    align-self: flex-start;
+    height: 20px;
+    width: 100px;
 }
 
 .pagination a {
@@ -140,12 +141,21 @@ div {
     display: flex;
     height: 100%;
     width: 100%;
+    white-space: nowrap;
 }
 
 .flexBtnBox {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
+    justify-content: center;
+    color: #434343ff;
+}
+
+.flexBtnBoxCenter {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
     justify-content: center;
     color: #434343ff;
 }
@@ -153,9 +163,27 @@ div {
 .flexBtnBoxs {
     display: flex;
     flex-direction: row;
+    align-self: center;
+    justify-content: left;
+    color: #434343ff;
+}
+
+.flexBtnBoxs1 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: left;
+    color: #434343ff;
+    padding-bottom: 10px;
+}
+
+.flexBtnBoxs2 {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     color: #434343ff;
+    padding-top: 40px;
 }
 
 .flexBtn {
@@ -164,6 +192,19 @@ div {
     justify-content: center;
     padding: 0px 5px 0px 5px;
     color: #434343ff;
+
+}
+
+.flexBtnHiddenBtnFix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    width: 32px;
+    margin: 5px;
+    color: #434343ff;
+    border: 1px solid #999999ff;
+    border-radius: 5px;
 
 }
 
@@ -210,7 +251,7 @@ div {
 .flexBtnHiddenTitle {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 0px 10px 10px 10px;
     margin: 5px;
     color: #434343ff;
@@ -255,12 +296,30 @@ div {
     white-space: nowrap;
 }
 
-input {
+.inputSearch {
     border: 1px solid #ccccccff;
     border-radius: 20px;
     color: #434343ff;
     height: 40px;
     width: 300px;
+    padding: 0px 5px 0px 5px;
+}
+
+.inputModalName {
+    border: 1px solid #ccccccff;
+    border-radius: 20px;
+    color: #434343ff;
+    height: 20px;
+    width: 60px;
+    padding: 0px 5px 0px 5px;
+}
+
+.inputModalPhone {
+    border: 1px solid #ccccccff;
+    border-radius: 20px;
+    color: #434343ff;
+    height: 20px;
+    width: 100px;
     padding: 0px 5px 0px 5px;
 }
 
@@ -277,7 +336,6 @@ a {
 table {
     border-collapse: collapse;
     border-top: solid 1px #ccccccff;
-    width: 100%;
     table-layout: fixed;
 }
 
@@ -287,9 +345,9 @@ th {
     text-align: center;
     padding-left: 21px;
     padding-right: 21px;
-    text-overflow: auto;
     white-space: nowrap;
-    /* padding: 1em; */
+
+    padding: 1em;
 }
 
 td {
@@ -298,10 +356,9 @@ td {
     text-align: center;
     padding-left: 21px;
     padding-right: 21px;
-    width: auto;
-    text-overflow: auto;
+
     white-space: nowrap;
-    /* padding: 1em; */
+    padding: 1em;
 
 
 }
@@ -309,4 +366,27 @@ td {
 a {
     width: 100%;
     height: 100%;
+}
+
+.modal {
+    position: absolute;
+    justify-self: center;
+    top: 50px;
+    width: 1400px;
+    height: 800px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 2;
+
+}
+
+.modalItemBox {
+    height: auto;
+    width: auto;
+}
+
+.modalItem {
+    height: auto;
+    width: auto;
 }

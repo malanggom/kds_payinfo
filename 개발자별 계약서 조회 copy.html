@@ -56,7 +56,6 @@
 <body style="margin: 0px;">
 
     <div class="grid-container">
-        <div style="display: none; width: 100%; height: 100%;" id="modalBackground"></div>
         <div class="item-logo bg-2c3e50ff text-white font-opensans-logo">
             <div class="flexLogoText">
                 한국데이타시스템
@@ -73,7 +72,7 @@
                     style="color: #ffffff;"></i></div>
             <!-- display: none id, class 둘다 적용안되서 직접 스타일로 적용 -->
             <div style="display: none;" id="menuToggleDevChild" class="flexTabsTextParent">
-                <div class="flexTabsChild"><a href="개발자조회.html" style="align-self: center;">개발자조회</a></div>
+                <div class="flexTabsChild"><a href="개발자조회.html">개발자조회</a></div>
                 <div class="flexTabsChild"><a href="개발자별 계약서 조회.html">개발자별 계약서 조회</a></div>
             </div>
 
@@ -259,71 +258,6 @@
                                 </div>
                             </div>
                     </button>
-                    <div class="modal" id="modal" style="display: none;">
-                        <div class="modalItemBox" style="display: flex; flex-direction: column;">
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">*는 필수 작성사항 입니다.</div>
-                            </div>
-
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">이름 <input type="text" value="" class="inputModalName"></div>
-                                <div class="modalItem">휴대폰번호 <input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">이메일주소 <input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">원천세/부가세<button>3.3%</button><button>사업자</button></div>
-                                <div class="modalItem">주민등록번호 <input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">사업자등록번호 <input type="text" value="" class="inputModalPhone">
-                                </div>
-                                <div class="modalItem">상호 <input type="text" value="" class="inputModalPhone"></div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">프로젝트 투입<button>O</button><button>X</button></div>
-                                <div class="modalItem">고객사별 계약서<button>O</button><button>X</button></div>
-                                <div class="modalItem">개발자별 계약서<button>O</button><button>X</button></div>
-                                <div class="modalItem">컨텍루트<button>잡코리아</button><button>소개</button><button>OKKY</button>
-                                </div>
-                                <div class="modalItem">카카오톡닉네임 <input type="text" value="" class="inputModalPhone">
-                                </div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">은행<input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">예금주<input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">계좌번호<input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">직원<button>O</button><button>X</button></div>
-                                <div class="modalItem">직원금액 <input type="text" value="" class="inputModalPhone">만원</div>
-                                <div class="modalItem">년차 <input type="text" value="" class="inputModalPhone">년<input
-                                        type="text" value="" class="inputModalPhone">개월</div>
-
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">
-                                    직책<button>PM</button><button>PL</button><button>AA</button><button>TA</button></div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">
-                                    직급<button>사원</button><button>주임</button><button>대리</button><button>과장</button>
-                                    <button>차장</button><button>부장</button><button>이사</button>
-                                </div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">
-                                    직무<button>운영</button><button>설계</button><button>개발</button>
-                                </div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">
-                                    언어<button>C</button><button>C++</button><button>C#</button><button>Objective-C</button>
-                                    <button>Java</button><button>Python</button><button>Html</button><button>CSS</button>
-                                    <button>JavaScript</button><button>Jsp</button><button>R</button><button>Ruby</button>
-                                    <button>PHP</button><button>ADA</button><button>Basic</button><button>Kotlin</button>
-                                    <button>Lisp</button><button>Pascal</button><button>Prolog</button><button>Scala</button>
-                                    <button>Swift</button><button>VisualBasic</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 
-                            <form action=""></form> -->
-                    </div>
                     <button class="btnCardHidden" id="flexBtnChild4"
                         style="visibility: hidden; position:fixed; top:140px; left:695px;">
                         <div class="flexBtnParent">
@@ -522,10 +456,9 @@
 
                 <div class="flexMainItemSearch">
                     <div class="flexMainItemSearchChild">
-                        <input type="text" placeholder="" class="inputSearch mgL10">
+                        <input type="text" placeholder="" class="mgL10">
                         <button class="flexBtnSearch mgL10">검색</button>
-                        <button class="flexBtnSearch mgL10" id="devAddBtn" type="button"
-                            style="z-index: 1;">개발자추가</button>
+                        <button class="flexBtnSearch mgL10">개발자추가</button>
                     </div>
                     <!-- <div class="flexMainItemSearchChildRight">
                         <div class="flexMainItemSearchChildRightChild">
@@ -536,7 +469,7 @@
 
                 <div class="flexMainItemSearchHidden">
                     <div class="flexMainItemSearchChild">
-                        <input type="text" placeholder="" class="inputSearch mgL10" style="visibility: hidden;">
+                        <input type="text" placeholder="" class="mgL10" style="visibility: hidden;">
                         <button class="flexBtnSearch mgL10" style="visibility: hidden;">검색</button>
                         <button class="flexBtnSearch mgL10" style="visibility: hidden;">개발자추가</button>
                     </div>
@@ -552,400 +485,62 @@
                 </div>
 
                 <div class="flexMainList">
-                    <div style="width: 1660px; height: 590px; overflow: scroll;">
-                        <table class="fontOpensansSm" style="margin-left: 10px;">
-                            <th>이름</th>
-                            <th>프로젝트 투입</th>
-                            <th>개발자별계약서</th>
-                            <th>고객사별계약서</th>
-                            <th>3.3%/사업자</th>
-                            <th>주민등록번호</th>
-                            <th>사업자등록번호</th>
-                            <th>상호</th>
-                            <th>직원</th>
-                            <th>직원금액</th>
-                            <th>년차</th>
-                            <th>직책</th>
-                            <th>직급</th>
-                            <th>직무</th>
-                            <th>스킬</th>
-                            <th>언어</th>
-                            <th>소개자</th>
-                            <th>컨텍루트</th>
-                            <th>카카오톡닉네임</th>
-                            <th>휴대폰번호</th>
-                            <th>이메일주소</th>
-                            <th>은행</th>
-                            <th>예금주</th>
-                            <th>계좌번호</th>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
-                                <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                        </table>
+                    <div class="fontOpensansSm" style=" width: 100%;
+                    overflow: scroll; margin-left: 10px;">
+                        <div style="width: 100%; height: 52px;">
+                            <div class="th">이름</div>
+                            <div class="th">프로젝트 투입</div>
+                            <div class="th">개발자별계약서</div>
+                            <div class="th">고객사별계약서</div>
+                            <div class="th">3.3%/사업자</div>
+                            <div class="th">주민등록번호</div>
+                            <div class="th">사업자등록번호</div>
+                            <div class="th">상호</div>
+                            <div class="th">직원</div>
+                            <div class="th">직원금액</div>
+                            <div class="th">년차</div>
+                            <div class="th">직책</div>
+                            <div class="th">직급</div>
+                            <div class="th">직무</div>
+                            <div class="th">스킬</div>
+                            <div class="th">언어</div>
+                            <div class="th">소개자</div>
+                            <div class="th">컨텍루트</div>
+                            <div class="th">카카오톡닉네임</div>
+                            <div class="th">휴대폰번호</div>
+                            <div class="th">이메일주소</div>
+                            <div class="th">은행</div>
+                            <div class="th">예금주</div>
+                            <div class="th">계좌번호</div>
+                        </div>
+                        <div style="width: 100%; height: 52px;">
+                            <div class="td">홍길동</div>
+                            <div class="td">O</div>
+                            <div class="td">X</div>
+                            <div class="td">X</div>
+                            <div class="td">3.3</div>
+                            <div class="td">123456-1234567</div>
+                            <div class="td">12345-12345</div>
+                            <div class="td">N/A</div>
+                            <div class="td">O</div>
+                            <div class="td">100만원</div>
+                            <div class="td">9년</div>
+                            <div class="td">PM</div>
+                            <div class="td">사원</div>
+                            <div class="td">개발</div>
+                            <div class="td">spring</div>
+                            <div class="td">JAVA</div>
+                            <div class="td">고길동</div>
+                            <div class="td">소개</div>
+                            <div class="td">홍길동</div>
+                            <div class="td">010-0000-0000</div>
+                            <div class="td">홍길동@naver.com</div>
+                            <div class="td">국민</div>
+                            <div class="td">홍길동</div>
+                            <div class="td">0000-000-000000</div>
+                        </div>
                     </div>
                 </div>
-
                 <div class="flexMainPagenation">
                     <div class="pagination fontOpensansSm">
                         <a class="fontOpensansSm" href="#">&laquo;</a>

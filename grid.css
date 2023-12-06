@@ -244,19 +244,20 @@ body{
 .flexMainItemChild {
     display: flex;
     align-items: center;
+    width: 70%;
     height: 0px;
 }
 
 .flexMainList {
-    display: flex;
-    height: 600px;
+    margin-top: 20px;
+    /* display: flex; */
+    width: 100%;
     /* flex-wrap: wrap; */
 }
 
 .flexMainPagenation {
     display: flex;
     justify-content: center;
-    height: 50px;
 }
 
 /*-------------------------플렉스-------------------------*/
