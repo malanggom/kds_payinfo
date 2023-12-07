@@ -7,6 +7,8 @@ const toggleitem6 = document.getElementById("menuToggleDevChild6");
 const toggleitem7 = document.getElementById("menuToggleDevChild7");
 
 const devAddBtn = document.getElementById("devAddBtn");
+const searchBtn = document.getElementById("searchBtn");
+const searchBar = document.getElementById("searchBar");
 const btntoggleitem3 = document.getElementById("flexBtnChild3");
 const btntoggleitem4 = document.getElementById("flexBtnChild4");
 const modal = document.getElementById("modal");
@@ -20,12 +22,13 @@ const btntoggleitem7 = document.getElementById("flexBtnChild7");
 const btntoggleitem8 = document.getElementById("flexBtnChild8");
 const btntoggleitem9 = document.getElementById("flexBtnChild9");
 const btntoggleitem10 = document.getElementById("flexBtnChild10");
+const btntoggleitem20 = document.getElementById("flexBtnChild20");
 
 document.getElementById("devAddBtn").onclick = function menuToggle(){
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
     || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
     || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
-    || btntoggleitem10.style.visibility === "") {
+    || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
     btntoggleitem.style.visibility = "hidden";
     btntoggleitem2.style.visibility = "hidden";
     btntoggleitem3.style.visibility = "hidden";
@@ -36,6 +39,7 @@ document.getElementById("devAddBtn").onclick = function menuToggle(){
     btntoggleitem8.style.visibility = "hidden";
     btntoggleitem9.style.visibility = "hidden";
     btntoggleitem10.style.visibility = "hidden";
+    btntoggleitem20.style.visibility === "hidden";
     modal.style.display = "";
     modalBackground.style.display = "";
     } else{
@@ -43,6 +47,47 @@ document.getElementById("devAddBtn").onclick = function menuToggle(){
         modalBackground.style.display = "";
     }
 }
+
+document.getElementById("searchBar").onclick = function menuToggle(){
+    if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
+    || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
+    || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
+    || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
+    btntoggleitem.style.visibility = "hidden";
+    btntoggleitem2.style.visibility = "hidden";
+    btntoggleitem3.style.visibility = "hidden";
+    btntoggleitem4.style.visibility = "hidden";
+    btntoggleitem5.style.visibility = "hidden";
+    btntoggleitem6.style.visibility = "hidden";
+    btntoggleitem7.style.visibility = "hidden";
+    btntoggleitem8.style.visibility = "hidden";
+    btntoggleitem9.style.visibility = "hidden";
+    btntoggleitem10.style.visibility = "hidden";
+    btntoggleitem20.style.visibility = "hidden";
+    } else{
+    }
+}
+
+document.getElementById("searchBtn").onclick = function menuToggle(){
+    if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
+    || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
+    || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
+    || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
+    btntoggleitem.style.visibility = "hidden";
+    btntoggleitem2.style.visibility = "hidden";
+    btntoggleitem3.style.visibility = "hidden";
+    btntoggleitem4.style.visibility = "hidden";
+    btntoggleitem5.style.visibility = "hidden";
+    btntoggleitem6.style.visibility = "hidden";
+    btntoggleitem7.style.visibility = "hidden";
+    btntoggleitem8.style.visibility = "hidden";
+    btntoggleitem9.style.visibility = "hidden";
+    btntoggleitem10.style.visibility = "hidden";
+    btntoggleitem20.style.visibility = "hidden";
+    } else{
+    }
+}
+
 
 document.getElementById("menuToggleDev").onclick = function menuToggle() {
     if (toggleitem.style.display === "none" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "flex"
@@ -156,7 +201,7 @@ document.getElementById("flexBtnPj").onclick = function menuToggle(params) {
     if (btntoggleitem.style.visibility === "hidden" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
         || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
         || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
-        || btntoggleitem10.style.visibility === "") {
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
         btntoggleitem.style.visibility = "";
         btntoggleitem2.style.visibility = "hidden";
         btntoggleitem3.style.visibility = "hidden";
@@ -167,8 +212,11 @@ document.getElementById("flexBtnPj").onclick = function menuToggle(params) {
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
+        btntoggleitem.style.zIndex = "2";
     } else {
         btntoggleitem.style.visibility = "hidden";
+        btntoggleitem.style.zIndex = "0";
     }
 }
 
@@ -176,7 +224,7 @@ document.getElementById("flexBtnContract").onclick = function menuToggle(params)
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "hidden" || btntoggleitem3.style.visibility === ""
         || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
         || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
-        || btntoggleitem10.style.visibility === "") {
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
         btntoggleitem2.style.visibility = "";
         btntoggleitem.style.visibility = "hidden";
         btntoggleitem3.style.visibility = "hidden";
@@ -187,8 +235,11 @@ document.getElementById("flexBtnContract").onclick = function menuToggle(params)
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
+        btntoggleitem2.style.zIndex = "2";
     } else {
         btntoggleitem2.style.visibility = "hidden";
+        btntoggleitem2.style.zIndex = "0";
     }
 }
 
@@ -196,7 +247,7 @@ document.getElementById("flexBtnWhtaxVat").onclick = function menuToggle(params)
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === "hidden"
         || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
         || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
-        || btntoggleitem10.style.visibility === "") {
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
         btntoggleitem3.style.visibility = "";
         btntoggleitem.style.visibility = "hidden";
         btntoggleitem2.style.visibility = "hidden";
@@ -207,6 +258,7 @@ document.getElementById("flexBtnWhtaxVat").onclick = function menuToggle(params)
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
         btntoggleitem3.style.zIndex = "2";
     } else {
         btntoggleitem3.style.visibility = "hidden";
@@ -219,7 +271,7 @@ document.getElementById("flexBtnYear").onclick = function menuToggle(params) {
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
         || btntoggleitem4.style.visibility === "hidden" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
         || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
-        || btntoggleitem10.style.visibility === "") {
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
         btntoggleitem4.style.visibility = "";
         btntoggleitem.style.visibility = "hidden";
         btntoggleitem2.style.visibility = "hidden";
@@ -230,6 +282,7 @@ document.getElementById("flexBtnYear").onclick = function menuToggle(params) {
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
         btntoggleitem4.style.zIndex = "2";
     } else {
         btntoggleitem4.style.visibility = "hidden";
@@ -237,11 +290,34 @@ document.getElementById("flexBtnYear").onclick = function menuToggle(params) {
     }
 }
 
+document.getElementById("flexBtnGrade").onclick = function menuToggle(params) {
+    if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
+        || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
+        || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "hidden") {
+        btntoggleitem20.style.visibility = "";
+        btntoggleitem.style.visibility = "hidden";
+        btntoggleitem2.style.visibility = "hidden";
+        btntoggleitem3.style.visibility = "hidden";
+        btntoggleitem4.style.visibility = "hidden";
+        btntoggleitem5.style.visibility = "hidden";
+        btntoggleitem6.style.visibility = "hidden";
+        btntoggleitem7.style.visibility = "hidden";
+        btntoggleitem8.style.visibility = "hidden";
+        btntoggleitem9.style.visibility = "hidden";
+        btntoggleitem10.style.visibility = "hidden";
+        
+    } else {
+        btntoggleitem20.style.visibility = "hidden";
+        
+    }
+}
+
 document.getElementById("flexBtnPosition").onclick = function menuToggle(params) {
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
         || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "hidden" || btntoggleitem6.style.visibility === ""
         || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
-        || btntoggleitem10.style.visibility === "") {
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
         btntoggleitem5.style.visibility = "";
         btntoggleitem.style.visibility = "hidden";
         btntoggleitem2.style.visibility = "hidden";
@@ -252,6 +328,7 @@ document.getElementById("flexBtnPosition").onclick = function menuToggle(params)
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
     } else {
         btntoggleitem5.style.visibility = "hidden";
     }
@@ -261,7 +338,7 @@ document.getElementById("flexBtnRank").onclick = function menuToggle(params) {
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
         || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === "hidden"
         || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
-        || btntoggleitem10.style.visibility === "") {
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
         btntoggleitem6.style.visibility = "";
         btntoggleitem.style.visibility = "hidden";
         btntoggleitem2.style.visibility = "hidden";
@@ -272,6 +349,7 @@ document.getElementById("flexBtnRank").onclick = function menuToggle(params) {
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
     } else {
         btntoggleitem6.style.visibility = "hidden";
     }
@@ -281,7 +359,7 @@ document.getElementById("flexBtnJobtitle").onclick = function menuToggle(params)
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
         || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
         || btntoggleitem7.style.visibility === "hidden" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
-        || btntoggleitem10.style.visibility === "") {
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
         btntoggleitem7.style.visibility = "";
         btntoggleitem.style.visibility = "hidden";
         btntoggleitem2.style.visibility = "hidden";
@@ -292,6 +370,7 @@ document.getElementById("flexBtnJobtitle").onclick = function menuToggle(params)
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
     } else {
         btntoggleitem7.style.visibility = "hidden";
     }
@@ -301,7 +380,7 @@ document.getElementById("flexBtnSkill").onclick = function menuToggle(params) {
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
         || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
         || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "hidden" || btntoggleitem9.style.visibility === ""
-        || btntoggleitem10.style.visibility === "") {
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
         btntoggleitem8.style.visibility = "";
         btntoggleitem.style.visibility = "hidden";
         btntoggleitem2.style.visibility = "hidden";
@@ -312,6 +391,7 @@ document.getElementById("flexBtnSkill").onclick = function menuToggle(params) {
         btntoggleitem7.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
     } else {
         btntoggleitem8.style.visibility = "hidden";
     }
@@ -321,7 +401,7 @@ document.getElementById("flexBtnLanguage").onclick = function menuToggle(params)
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
         || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
         || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === "hidden"
-        || btntoggleitem10.style.visibility === "") {
+        || btntoggleitem10.style.visibility === "" || btntoggleitem20.style.visibility === "") {
         btntoggleitem9.style.visibility = "";
         btntoggleitem.style.visibility = "hidden";
         btntoggleitem2.style.visibility = "hidden";
@@ -332,6 +412,7 @@ document.getElementById("flexBtnLanguage").onclick = function menuToggle(params)
         btntoggleitem7.style.visibility = "hidden";
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
     } else {
         btntoggleitem9.style.visibility = "hidden";
     }
@@ -341,7 +422,7 @@ document.getElementById("flexBtnContactRoot").onclick = function menuToggle(para
     if (btntoggleitem.style.visibility === "" || btntoggleitem2.style.visibility === "" || btntoggleitem3.style.visibility === ""
         || btntoggleitem4.style.visibility === "" || btntoggleitem5.style.visibility === "" || btntoggleitem6.style.visibility === ""
         || btntoggleitem7.style.visibility === "" || btntoggleitem8.style.visibility === "" || btntoggleitem9.style.visibility === ""
-        || btntoggleitem10.style.visibility === "hidden") {
+        || btntoggleitem10.style.visibility === "hidden" || btntoggleitem20.style.visibility === "") {
         btntoggleitem10.style.visibility = "";
         btntoggleitem.style.visibility = "hidden";
         btntoggleitem2.style.visibility = "hidden";
@@ -352,6 +433,7 @@ document.getElementById("flexBtnContactRoot").onclick = function menuToggle(para
         btntoggleitem7.style.visibility = "hidden";
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
+        btntoggleitem20.style.visibility = "hidden";
     } else {
         btntoggleitem10.style.visibility = "hidden";
     }

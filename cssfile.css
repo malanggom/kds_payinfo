@@ -19,6 +19,13 @@
     color: #434343ff;
 }
 
+.fontOpensansSm700 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: small;
+    color: #434343ff;
+}
+
 /*글자 하얀색*/
 .text-white {
     color: white;
@@ -316,13 +323,20 @@ div {
 
 .inputModalPhone {
     border: 1px solid #ccccccff;
-    border-radius: 20px;
     color: #434343ff;
-    height: 20px;
+    height: 30px;
     width: 100px;
     padding: 0px 5px 0px 5px;
 }
 
+.inputModalPhoneR {
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: 50px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+}
 /*-------------------------버튼-------------------------*/
 
 a {
@@ -374,9 +388,10 @@ a {
     top: 50px;
     width: 1400px;
     height: 800px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid #999999ff;
+    border-radius: 20px;
     background-color: white;
+    padding: 2em;
     z-index: 2;
 
 }
@@ -389,4 +404,86 @@ a {
 .modalItem {
     height: auto;
     width: auto;
+    padding: 1em;
+    /*텍스트 줄바꿈 방지*/
+    white-space: nowrap;
+}
+
+.modalDropdown{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: 40px;
+    background-color: white;
+    margin: 5px 10px 0px 10px;
+}
+
+.modalDropdownGrade{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: 70px;
+    background-color: white;
+    margin: 5px 10px 0px 10px;
+}
+
+.modalBtnOX{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+.modalBtnAuto{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: auto;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.modalBtnAutoLanguage{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: auto;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    margin: 5px 20px 20px 10px;
+}
+
+.modalMgL5{
+    margin-left: 5px;
+}
+
+.modalMgR5{
+    margin-right: 5px;
+}
+
+.modalMgR10{
+    margin-right: 10px;
+}
+
+.modalMgLR20{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.modalMgLR5{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+br{
+    /*커서 보이지 않게 하는 속성*/
+    caret-color: transparent;
+}
+
+label{
+    /*커서 보이지 않게 하는 속성*/
+    caret-color: transparent;
 }

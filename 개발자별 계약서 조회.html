@@ -160,6 +160,14 @@
                             </div>
                         </div>
                     </button>
+                    <button class="btnCard" id="flexBtnGrade">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">등급</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
                     <button class="btnCard" id="flexBtnPosition">
                         <div class="flexBtnParent">
                             <div class="flexBtn">직책</div>
@@ -259,71 +267,171 @@
                                 </div>
                             </div>
                     </button>
-                    <div class="modal" id="modal" style="display: none;">
-                        <div class="modalItemBox" style="display: flex; flex-direction: column;">
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">*는 필수 작성사항 입니다.</div>
-                            </div>
+                    
+                    <!-- 모달 시작 -->
 
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">이름 <input type="text" value="" class="inputModalName"></div>
-                                <div class="modalItem">휴대폰번호 <input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">이메일주소 <input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">원천세/부가세<button>3.3%</button><button>사업자</button></div>
-                                <div class="modalItem">주민등록번호 <input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">사업자등록번호 <input type="text" value="" class="inputModalPhone">
-                                </div>
-                                <div class="modalItem">상호 <input type="text" value="" class="inputModalPhone"></div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">프로젝트 투입<button>O</button><button>X</button></div>
-                                <div class="modalItem">고객사별 계약서<button>O</button><button>X</button></div>
-                                <div class="modalItem">개발자별 계약서<button>O</button><button>X</button></div>
-                                <div class="modalItem">컨텍루트<button>잡코리아</button><button>소개</button><button>OKKY</button>
-                                </div>
-                                <div class="modalItem">카카오톡닉네임 <input type="text" value="" class="inputModalPhone">
-                                </div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">은행<input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">예금주<input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">계좌번호<input type="text" value="" class="inputModalPhone"></div>
-                                <div class="modalItem">직원<button>O</button><button>X</button></div>
-                                <div class="modalItem">직원금액 <input type="text" value="" class="inputModalPhone">만원</div>
-                                <div class="modalItem">년차 <input type="text" value="" class="inputModalPhone">년<input
-                                        type="text" value="" class="inputModalPhone">개월</div>
+                    <div class="modal fontOpensansSm" id="modal" style="display: none;">
+                        <form action="" method="post">
+                                <!-- <legend>개인정보입력</legend> -->
+                                <label class="font-opensans" style="margin-left: 10px;">개발자 추가</label><br><br><br>
+                                <label style="margin-left: 10px;">이름</label>
+                                <label style="margin-left: 166px;">휴대폰번호</label>
+                                <label style="margin-left: 244px;">이메일주소</label>
+                                <label style="margin-left: 266px;">카카오톡 닉네임</label>
+                                <label style="margin-left: 100px;">컨텍루트</label>
+                                <br>
 
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">
-                                    직책<button>PM</button><button>PL</button><button>AA</button><button>TA</button></div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">
-                                    직급<button>사원</button><button>주임</button><button>대리</button><button>과장</button>
-                                    <button>차장</button><button>부장</button><button>이사</button>
+                                <div style="margin-top: 10px;">
+                                    <input type="text" name="name" class="inputModalPhone" style="margin-left: 10px;">
+                                    <input type="text" name="phone" class="inputModalPhoneR modalMgR5" style="margin-left: 80px;">
+                                    -
+                                    <input type="text" name="phone1" class="inputModalPhoneR modalMgLR5">
+                                    -
+                                    <input type="text" name="phone2" class="inputModalPhoneR modalMgL5">
+                                    <input type="text" name="email" class="inputModalPhone modalMgR5" style="margin-left: 80px;">
+                                    @
+                                    <input type="text" name="email1" class="inputModalPhone modalMgL5">
+                                    <input type="text" value="" class="inputModalPhone" style="margin-left: 80px;">
+                                    <button class="fontOpensansSm modalBtnAuto" style="margin-left: 80px;">잡코리아</button><button class="fontOpensansSm modalBtnAuto">소개</button><button class="fontOpensansSm modalBtnAuto">OKKY</button>
+                                    <br><br><br><br>
                                 </div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">
-                                    직무<button>운영</button><button>설계</button><button>개발</button>
-                                </div>
-                            </div>
-                            <div class="modalItemBox" style="display: flex; flex-direction: row;">
-                                <div class="modalItem">
-                                    언어<button>C</button><button>C++</button><button>C#</button><button>Objective-C</button>
-                                    <button>Java</button><button>Python</button><button>Html</button><button>CSS</button>
-                                    <button>JavaScript</button><button>Jsp</button><button>R</button><button>Ruby</button>
-                                    <button>PHP</button><button>ADA</button><button>Basic</button><button>Kotlin</button>
-                                    <button>Lisp</button><button>Pascal</button><button>Prolog</button><button>Scala</button>
-                                    <button>Swift</button><button>VisualBasic</button>
-                                </div>
-                            </div>
-                        </div>
+                                
+                                <label style="margin-left: 10px;">원천세/부가세</label>
+                                <label style="margin-left: 110px;">주민등록번호</label>
+                                <label style="margin-left: 246px;">사업자등록번호</label>
+                                <label style="margin-left: 234px;">상호</label>
+                                <br>
 
-                        <!-- 
-                            <form action=""></form> -->
+                                <div style="margin-top: 10px;">
+                                    <button class="fontOpensansSm modalBtnAuto" style="margin-left: 10px;">3.3%</button><button class="fontOpensansSm modalBtnAuto">사업자</button>
+                                    <input type="text" value="" class="inputModalPhone modalMgR5" style="margin-left: 80px;">
+                                    -
+                                    <input type="text" value="" class="inputModalPhone modalMgL5">
+                                    <input type="text" value="" class="inputModalPhone modalMgR5" style="margin-left: 80px;">
+                                    -
+                                    <input type="text" value="" class="inputModalPhone modalMgL5">
+                                    <input type="text" value="" class="inputModalPhone" style="margin-left: 80px;">
+                                    <br><br><br><br>
+                                </div>
+
+                                <label style="margin-left: 10px;">프로젝트 투입</label>
+                                <label style="margin-left: 60px;">고객사별 계약서</label>
+                                <label style="margin-left: 46px;">개발자별 계약서</label>
+                                <label style="margin-left: 46px;">은행</label>
+                                <label style="margin-left: 166px;">예금주</label>
+                                <label style="margin-left: 152px;">계좌번호</label>
+                                <label style="margin-left: 140px;">직원</label>
+                                <label style="margin-left: 116px;">직원금액</label>
+                                <br>
+                                
+                                <div style="margin-top: 10px;">
+                                    <button class="fontOpensansSm modalBtnOX" style="margin-left: 10px;">O</button><button class="fontOpensansSm modalBtnOX">X</button>
+                                    <button class="fontOpensansSm modalBtnOX" style="margin-left: 80px;">O</button><button class="fontOpensansSm modalBtnOX">X</button>
+                                    <button class="fontOpensansSm modalBtnOX" style="margin-left: 80px;">O</button><button class="fontOpensansSm modalBtnOX">X</button>
+                                    <input type="text" value="" class="inputModalPhone" style="margin-left: 80px;">
+                                    <input type="text" value="" class="inputModalPhone" style="margin-left: 80px;">
+                                    <input type="text" value="" class="inputModalPhone" style="margin-left: 80px;">
+                                    <button class="fontOpensansSm modalBtnOX" style="margin-left: 80px;">O</button><button class="fontOpensansSm modalBtnOX">X</button>
+                                    <input type="text" value="" class="inputModalPhone modalMgR10" style="margin-left: 80px;">만원
+                                    <br><br><br><br>
+                                </div>
+                                
+                                <label style="margin-left: 10px;">년차</label>
+                                <label style="margin-left: 210px;">등급</label>
+                                <label style="margin-left: 136px;">직책</label>
+                                <label style="margin-left: 208px;">직급</label>
+                                <label style="margin-left: 390px;">직무</label>
+                                <br>
+
+                                <div style="margin-top: 10px;">
+                                    <select name="year" class="modalDropdown">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+
+                                    </select>년
+                                    <select name="month" class="modalDropdown">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    개월
+                                    
+                                    <select name="grade" class="modalDropdownGrade" style="margin-left: 80px;">
+                                        <option value="초급">초급</option>
+                                        <option value="초상급">초상급</option>
+                                        <option value="중급">중급</option>
+                                        <option value="중상급">중상급</option>
+                                        <option value="고급">고급</option>
+                                        <option value="특급">특급</option>
+                                    </select>
+
+                                    <button class="fontOpensansSm modalBtnAuto" style="margin-left: 80px;">PM</button><button class="fontOpensansSm modalBtnAuto">PL</button><button class="fontOpensansSm modalBtnAuto">AA</button><button class="fontOpensansSm modalBtnAuto">TA</button>
+                                    <button class="fontOpensansSm modalBtnAuto" style="margin-left: 80px;">사원</button><button class="fontOpensansSm modalBtnAuto">주임</button><button class="fontOpensansSm modalBtnAuto">대리</button><button class="fontOpensansSm modalBtnAuto">과장</button><button class="fontOpensansSm modalBtnAuto">차장</button><button class="fontOpensansSm modalBtnAuto">부장</button><button class="fontOpensansSm modalBtnAuto">이사</button>
+                                    <button class="fontOpensansSm modalBtnAuto" style="margin-left: 80px;">운영</button><button class="fontOpensansSm modalBtnAuto">설계</button><button class="fontOpensansSm modalBtnAuto">개발</button>
+                                    <br><br><br><br>
+                                </div>
+
+                                <label style="margin-left: 10px;">언어</label>
+                                <br>
+
+                                <div style="margin-top: 10px;">
+                                    <button class="fontOpensansSm modalBtnAutoLanguage">C</button><button class="fontOpensansSm modalBtnAutoLanguage">C++</button><button class="fontOpensansSm modalBtnAutoLanguage">C#</button><button class="fontOpensansSm modalBtnAutoLanguage">Objective-C</button>
+                                    <button class="fontOpensansSm modalBtnAutoLanguage">Java</button><button class="fontOpensansSm modalBtnAutoLanguage">Python</button><button class="fontOpensansSm modalBtnAutoLanguage">Html</button><button class="fontOpensansSm modalBtnAutoLanguage">CSS</button>
+                                    <button class="fontOpensansSm modalBtnAutoLanguage">JavaScript</button><button class="fontOpensansSm modalBtnAutoLanguage">Jsp</button><button class="fontOpensansSm modalBtnAutoLanguage">R</button><button class="fontOpensansSm modalBtnAutoLanguage">Ruby</button>
+                                    <button class="fontOpensansSm modalBtnAutoLanguage">PHP</button><button class="fontOpensansSm modalBtnAutoLanguage">ADA</button><button class="fontOpensansSm modalBtnAutoLanguage">Basic</button><button class="fontOpensansSm modalBtnAutoLanguage">Kotlin</button>
+                                    <button class="fontOpensansSm modalBtnAutoLanguage">Lisp</button><button class="fontOpensansSm modalBtnAutoLanguage">Pascal</button><button class="fontOpensansSm modalBtnAutoLanguage">Prolog</button><button class="fontOpensansSm modalBtnAutoLanguage">Scala</button>
+                                    <button class="fontOpensansSm modalBtnAutoLanguage">Swift</button><button class="fontOpensansSm modalBtnAutoLanguage">VisualBasic</button>
+                                    <br><br><br><br><br><br>
+                                </div>
+
+                                <div style="display: flex; justify-content: center;"><input type="submit" value="추가" class="modalMgLR20 modalBtnAuto">
+                                    <input type="reset" value="초기화" class="modalMgLR20 modalBtnAuto">
+                                </div>
+                        </form>
                     </div>
+
+                    <!-- modal 종료 -->
+
                     <button class="btnCardHidden" id="flexBtnChild4"
                         style="visibility: hidden; position:fixed; top:140px; left:695px;">
                         <div class="flexBtnParent">
@@ -332,8 +440,30 @@
                                 <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
                             </div>
                     </button>
-                    <button class="btnCardHidden" id="flexBtnChild5"
+                    <button class="btnCardHidden" id="flexBtnChild20"
                         style="visibility: hidden; position:fixed; top:140px; left:800px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtnBox">
+                                <div class="flexBtnBoxCenter">
+                                    <div class="flexBtnHiddenBtnFix">초급</div>
+                                    <div class="flexBtnHiddenBtnFix">초상급</div>
+                                </div>
+                                <div class="flexBtnBoxCenter">
+                                    <div class="flexBtnHiddenBtnFix">중급</div>
+                                    <div class="flexBtnHiddenBtnFix">중상급</div>
+                                </div>
+                                <div class="flexBtnBoxCenter">
+                                    <div class="flexBtnHiddenBtnFix">고급</div>
+                                    <div class="flexBtnHiddenBtnFix">특급</div>
+                                </div>
+                                <div class="flexBtnBoxs2">
+                                    <div class="flexBtnHiddenBtnReset">초기화</div>
+                                    <div class="flexBtnHiddenBtnApply">적용</div>
+                                </div>
+                            </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnChild5"
+                        style="visibility: hidden; position:fixed; top:140px; left:905px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxCenter">
@@ -351,7 +481,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnChild6"
-                        style="visibility: hidden; position:fixed; top:140px; left:905px;">
+                        style="visibility: hidden; position:fixed; top:140px; left:1009px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxs">
@@ -374,7 +504,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnChild7"
-                        style="visibility: hidden; position:fixed; top:140px; left:1009px;">
+                        style="visibility: hidden; position:fixed; top:140px; left:1114px;">
                         <div class="flexBtnBox">
                             <div class="flexBtnBoxs">
                                 <div class="flexBtnHiddenBtn">운영</div>
@@ -388,7 +518,7 @@
                         </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnChild8"
-                        style="visibility: hidden; position:fixed; top:140px; left:1114px;">
+                        style="visibility: hidden; position:fixed; top:140px; left:1219px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnHiddenTitle">
@@ -461,7 +591,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnChild9"
-                        style="visibility: hidden; position:fixed; top:140px; left:1219px;">
+                        style="visibility: hidden; position:fixed; top:140px; left:1324px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxs">
@@ -505,7 +635,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnChild10"
-                        style="visibility: hidden; position:fixed; top:140px; left:1324px;">
+                        style="visibility: hidden; position:fixed; top:140px; left:1428px;">
                         <div class="flexBtnBox">
                             <div class="flexBtnBoxs">
                                 <div class="flexBtnHiddenBtn">잡코리아</div>
@@ -522,8 +652,8 @@
 
                 <div class="flexMainItemSearch">
                     <div class="flexMainItemSearchChild">
-                        <input type="text" placeholder="" class="inputSearch mgL10">
-                        <button class="flexBtnSearch mgL10">검색</button>
+                        <input type="text" placeholder="" class="inputSearch mgL10" id="searchBar" style="z-index: 1;">
+                        <button class="flexBtnSearch mgL10" id="searchBtn" style="z-index: 1;">검색</button>
                         <button class="flexBtnSearch mgL10" id="devAddBtn" type="button"
                             style="z-index: 1;">개발자추가</button>
                     </div>
@@ -565,6 +695,7 @@
                             <th>직원</th>
                             <th>직원금액</th>
                             <th>년차</th>
+                            <th>등급</th>
                             <th>직책</th>
                             <th>직급</th>
                             <th>직무</th>
@@ -590,6 +721,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -616,6 +748,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -642,6 +775,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -668,6 +802,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -694,6 +829,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -720,6 +856,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -746,6 +883,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -772,6 +910,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -798,6 +937,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -824,6 +964,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -850,6 +991,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -876,6 +1018,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -902,6 +1045,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
@@ -928,6 +1072,7 @@
                                 <td>O</td>
                                 <td>100만원</td>
                                 <td>9년</td>
+                                <td>중급</td>
                                 <td>PM</td>
                                 <td>사원</td>
                                 <td>개발</td>
