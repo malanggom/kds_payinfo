@@ -39,7 +39,7 @@ document.getElementById("devAddBtn").onclick = function menuToggle(){
     btntoggleitem8.style.visibility = "hidden";
     btntoggleitem9.style.visibility = "hidden";
     btntoggleitem10.style.visibility = "hidden";
-    btntoggleitem20.style.visibility === "hidden";
+    btntoggleitem20.style.visibility = "hidden";
     modal.style.display = "";
     modalBackground.style.display = "";
     } else{
@@ -306,9 +306,11 @@ document.getElementById("flexBtnGrade").onclick = function menuToggle(params) {
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem20.style.zIndex = "2";
         
-    } else {
+    } else if(btntoggleitem20.style.visibility === "") {
         btntoggleitem20.style.visibility = "hidden";
+        btntoggleitem20.style.zIndex = "0";
         
     }
 }
@@ -329,8 +331,10 @@ document.getElementById("flexBtnPosition").onclick = function menuToggle(params)
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
         btntoggleitem20.style.visibility = "hidden";
+        btntoggleitem5.style.zIndex = "2";
     } else {
         btntoggleitem5.style.visibility = "hidden";
+        btntoggleitem5.style.zIndex = "0";
     }
 }
 
@@ -350,8 +354,10 @@ document.getElementById("flexBtnRank").onclick = function menuToggle(params) {
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
         btntoggleitem20.style.visibility = "hidden";
+        btntoggleitem6.style.zIndex = "2";
     } else {
         btntoggleitem6.style.visibility = "hidden";
+        btntoggleitem6.style.zIndex = "0";
     }
 }
 
@@ -371,8 +377,10 @@ document.getElementById("flexBtnJobtitle").onclick = function menuToggle(params)
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
         btntoggleitem20.style.visibility = "hidden";
+        btntoggleitem7.style.zIndex = "2";
     } else {
         btntoggleitem7.style.visibility = "hidden";
+        btntoggleitem7.style.zIndex = "0";
     }
 }
 
@@ -392,8 +400,10 @@ document.getElementById("flexBtnSkill").onclick = function menuToggle(params) {
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
         btntoggleitem20.style.visibility = "hidden";
+        btntoggleitem8.style.zIndex = "2";
     } else {
         btntoggleitem8.style.visibility = "hidden";
+        btntoggleitem8.style.zIndex = "0";
     }
 }
 
@@ -413,8 +423,10 @@ document.getElementById("flexBtnLanguage").onclick = function menuToggle(params)
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem10.style.visibility = "hidden";
         btntoggleitem20.style.visibility = "hidden";
+        btntoggleitem9.style.zIndex = "2";
     } else {
         btntoggleitem9.style.visibility = "hidden";
+        btntoggleitem9.style.zIndex = "0";
     }
 }
 
@@ -434,8 +446,10 @@ document.getElementById("flexBtnContactRoot").onclick = function menuToggle(para
         btntoggleitem8.style.visibility = "hidden";
         btntoggleitem9.style.visibility = "hidden";
         btntoggleitem20.style.visibility = "hidden";
+        btntoggleitem10.style.zIndex = "2";
     } else {
         btntoggleitem10.style.visibility = "hidden";
+        btntoggleitem10.style.zIndex = "0";
     }
 }
 

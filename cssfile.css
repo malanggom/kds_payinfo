@@ -349,19 +349,21 @@ a {
 
 table {
     border-collapse: collapse;
-    border-top: solid 1px #ccccccff;
     table-layout: fixed;
 }
 
 th {
     background-color: #ccccccff;
-    border-bottom: solid 1px #ccccccff;
     text-align: center;
     padding-left: 21px;
     padding-right: 21px;
     white-space: nowrap;
-
     padding: 1em;
+}
+
+thead{
+    top:0px;
+    position: sticky;
 }
 
 td {
