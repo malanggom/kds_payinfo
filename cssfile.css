@@ -133,7 +133,7 @@ div {
 }
 
 .btnCardHidden {
-    position: relative;
+    position: absolute;
     top: 50px;
     background-color: white;
 
