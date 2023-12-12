@@ -1,0 +1,492 @@
+@charset "UTF-8";
+/*-------------------------폰트-------------------------*/
+/*글자 오픈산스*/
+.font-opensans-logo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.font-opensans {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.fontOpensansSm {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: small;
+    color: #434343ff;
+}
+
+.fontOpensansSm700 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: small;
+    color: #434343ff;
+}
+
+/*글자 하얀색*/
+.text-white {
+    color: white;
+}
+
+.text-333333 {
+    color: #333333;
+}
+
+/*-------------------------폰트-------------------------*/
+
+/*-------------------------배경-------------------------*/
+.bg-2c3e50ff {
+    background-color: #2c3e50ff;
+}
+
+.bg-f6f6f6ff {
+    background-color: #f6f6f6ff;
+}
+
+/*-------------------------배경-------------------------*/
+
+/*-------------------------기능-------------------------*/
+/*페이지네이션*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    height: 20px;
+    width: 100px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/*토글*/
+#toggle {
+    display: none;
+}
+
+/*선 없애기*/
+.noLine {
+    border: none;
+}
+
+/*좌우 10px 마진*/
+.margin-left-right {
+    margin: 0px 10px 0px 10px;
+}
+
+/*좌 20px 패딩*/
+.padding {
+    padding: 0px 0px 0px 20px;
+}
+
+/*좌 25px 패딩*/
+.padding25 {
+    padding: 0px 0px 0px 25px;
+}
+
+/*좌우 25px 패딩*/
+.marginLR25 {
+    margin: 0px 0px 25px 25px;
+}
+
+.pdL10 {
+    padding-left: 10px;
+}
+
+.mgL10 {
+    margin-left: 10px;
+}
+
+/*div 사이즈*/
+div {
+    width: 100%;
+    height: 100%;
+}
+
+.imgsize {
+    width: 30px;
+    height: 30px;
+}
+
+/*-------------------------버튼-------------------------*/
+.btnCard {
+    background-color: white;
+
+    border: 1px solid #999999ff;
+    border-radius: 10px;
+
+    height: 40px;
+
+    /*텍스트 줄바꿈 방지*/
+    white-space: nowrap;
+
+    padding: 25px 20px 25px 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+.btnCardHidden {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+
+    border: 1px solid #999999ff;
+    border-radius: 10px;
+
+    padding: 25px 20px 25px 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+.flexBtnParent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.flexBtnBox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    color: #434343ff;
+}
+
+.flexBtnBoxCenter {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    color: #434343ff;
+}
+
+.flexBtnBoxs {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: left;
+    color: #434343ff;
+}
+
+.flexBtnBoxs1 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: left;
+    color: #434343ff;
+    padding-bottom: 10px;
+}
+
+.flexBtnBoxs2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #434343ff;
+    padding-top: 40px;
+}
+
+.flexBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    color: #434343ff;
+
+}
+
+.flexBtnHiddenBtnFix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    width: 32px;
+    margin: 5px;
+    color: #434343ff;
+    border: 1px solid #999999ff;
+    border-radius: 5px;
+
+}
+
+.flexBtnHiddenBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    width: auto;
+    margin: 5px;
+    color: #434343ff;
+    border: 1px solid #999999ff;
+    border-radius: 5px;
+
+}
+
+.flexBtnHiddenBtnReset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    width: auto;
+    margin: 5px;
+    color: #434343ff;
+    background-color: #ccccccff;
+    border-radius: 5px;
+
+}
+
+
+.flexBtnHiddenBtnApply {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    width: auto;
+    margin: 5px;
+    color: #434343ff;
+    background-color: #a6bcd6ff;
+    border-radius: 5px;
+
+}
+
+.flexBtnHiddenTitle {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0px 10px 10px 10px;
+    margin: 5px;
+    color: #434343ff;
+
+}
+
+.flexBtnHidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    width: 96px;
+    color: #434343ff;
+    border-radius: 10px;
+}
+
+.flexBtnHiddenStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    height: 25px;
+    color: #434343ff;
+    border: 1px solid #999999ff;
+    border-radius: 10px;
+}
+
+.flexBtnSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ccccccff;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #434343ff;
+
+    height: 40px;
+    padding: 0px 20px 0px 20px;
+
+    /*텍스트 줄바꿈 방지*/
+    white-space: nowrap;
+}
+
+.inputSearch {
+    border: 1px solid #ccccccff;
+    border-radius: 20px;
+    color: #434343ff;
+    height: 40px;
+    width: 300px;
+    padding: 0px 5px 0px 5px;
+}
+
+.inputModalName {
+    border: 1px solid #ccccccff;
+    border-radius: 20px;
+    color: #434343ff;
+    height: 20px;
+    width: 60px;
+    padding: 0px 5px 0px 5px;
+}
+
+.inputModalPhone {
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: 100px;
+    padding: 0px 5px 0px 5px;
+}
+
+.inputModalPhoneR {
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: 50px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+}
+/*-------------------------버튼-------------------------*/
+
+a {
+    color: white;
+    text-decoration-line: none;
+    display: inline-block;
+}
+
+/*-------------------------기능-------------------------*/
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th {
+    background-color: #ccccccff;
+    text-align: center;
+    padding-left: 21px;
+    padding-right: 21px;
+    white-space: nowrap;
+    padding: 1em;
+}
+
+thead{
+    top:0px;
+    position: sticky;
+}
+
+td {
+    background-color: white;
+    border-bottom: solid 1px #ccccccff;
+    text-align: center;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    white-space: nowrap;
+    padding: 1em;
+
+
+}
+
+a {
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    position: absolute;
+    justify-self: center;
+    top: 50px;
+    width: 1400px;
+    height: 800px;
+    border: 1px solid #999999ff;
+    border-radius: 20px;
+    background-color: white;
+    padding: 2em;
+    z-index: 2;
+
+}
+
+.modalItemBox {
+    height: auto;
+    width: auto;
+}
+
+.modalItem {
+    height: auto;
+    width: auto;
+    padding: 1em;
+    /*텍스트 줄바꿈 방지*/
+    white-space: nowrap;
+}
+
+.modalDropdown{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: 40px;
+    background-color: white;
+    margin: 5px 10px 0px 10px;
+}
+
+.modalDropdownGrade{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: 70px;
+    background-color: white;
+    margin: 5px 10px 0px 10px;
+}
+
+.modalBtnOX{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+.modalBtnAuto{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: auto;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.modalBtnAutoLanguage{
+    border: 1px solid #ccccccff;
+    color: #434343ff;
+    height: 30px;
+    width: auto;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    margin: 5px 20px 20px 10px;
+}
+
+.modalMgL5{
+    margin-left: 5px;
+}
+
+.modalMgR5{
+    margin-right: 5px;
+}
+
+.modalMgR10{
+    margin-right: 10px;
+}
+
+.modalMgLR20{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.modalMgLR5{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+br{
+    /*커서 보이지 않게 하는 속성*/
+    caret-color: transparent;
+}
+
+label{
+    /*커서 보이지 않게 하는 속성*/
+    caret-color: transparent;
+}

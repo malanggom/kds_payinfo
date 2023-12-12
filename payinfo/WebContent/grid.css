@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/*-------------------------그리드-------------------------*/
+html{
+    height: 100%;
+    position: auto;
+}
+body{
+    height: 100%;
+    margin:0;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main-content {
+    grid-area: main-content;
+}
+
+.grid-container {
+    display: grid;
+
+    /*그리드 컬럼 2개 높이 50px로 고정*/
+    grid-template-rows: 50px 1fr;
+
+    /*그리드 컬럼 250px 고정, */
+    grid-template-columns: 250px 1fr;
+
+
+    /*세로 가운데 정렬*/
+    align-items: center;
+
+    /*화면 높이 100% 채우기*/
+    height: 100%;
+
+    grid-template-areas:
+        "logo          header"
+        "sidebar main-content";
+}
+
+/*그리드 로고*/
+.item-logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/*그리드 헤더*/
+.item-header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: white;
+}
+
+/*그리드 탭*/
+.item-tabs {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #2c3e50ff;
+    color: white;
+}
+ 
+/*그리드 메인*/
+.item-main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: white;
+}
+
+
+/*-------------------------그리드-------------------------*/
+
+/*-------------------------플렉스-------------------------*/
+.flexLogoText {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexLogoButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 30px;
+}
+
+.flex-logo-logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.flexHeader {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #333333;
+}
+
+.flexHeaderChild {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #333333;
+}
+
+.flexTabsImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 30px;
+}
+
+.flexTabsTextParent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent6 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsTextParent7 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsText {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    padding: 0px 0px 0px 20px;
+}
+
+.flexTabsChild {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexMainItem {
+    display: flex;
+    align-items: end;
+    height: 80px;
+}
+
+.flexMainItemSearch {
+    display: flex;
+    align-items: end;
+    height: 80px;
+}
+
+.flexMainItemSearchChild {
+    display: flex;
+    align-items: end;
+    height: 80px;
+}
+
+.flexMainItemSearchHidden {
+    display: flex;
+    align-items: center;
+    height: 0px;
+}
+
+.flexMainItemSearchChildRight {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 80px;
+}
+
+.flexMainItemSearchChildRightChild {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+.flexMainItemChild {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 0px;
+}
+
+.flexMainList {
+    margin-top: 20px;
+    /* display: flex; */
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+.flexMainPagenation {
+    display: flex;
+    justify-content: center;
+}
+
+/*-------------------------플렉스-------------------------*/
