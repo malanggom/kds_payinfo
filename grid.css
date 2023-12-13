@@ -117,70 +117,56 @@ body{
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 30px;
+    width: 50px;
 }
 
 .flexTabsTextParent {
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 100px;
-    width: 180px;
-    padding: 0px 0px 0px 20px;
+    width: 100%;
 }
 
 .flexTabsTextParent2 {
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 150px;
-    width: 180px;
-    padding: 0px 0px 0px 20px;
+    width: 100%;
 }
 
 .flexTabsTextParent3 {
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 100px;
-    width: 180px;
-    padding: 0px 0px 0px 20px;
+    width: 100%;
 }
 
 .flexTabsTextParent4 {
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 100px;
-    width: 180px;
-    padding: 0px 0px 0px 20px;
+    width: 100%;
 }
 
 .flexTabsTextParent5 {
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 100px;
-    width: 180px;
-    padding: 0px 0px 0px 20px;
+    width: 100%;
 }
 
 .flexTabsTextParent6 {
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 50px;
-    width: 180px;
-    padding: 0px 0px 0px 20px;
+    width: 100%;
 }
 
 .flexTabsTextParent7 {
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 50px;
-    width: 180px;
-    padding: 0px 0px 0px 20px;
+    width: 100%;
 }
 
 .flexTabsText {
@@ -193,9 +179,10 @@ body{
 
 .flexTabsChild {
     display: flex;
-    align-items: center;
     height: 50px;
     width: 100%;
+    padding-left: 20px;
+    align-items: center;
 }
 
 .flex-main {

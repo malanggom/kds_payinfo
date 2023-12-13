@@ -105,7 +105,40 @@ document.getElementById("menuToggleDev").onclick = function menuToggle() {
     }
 }
 
+document.getElementById("menuToggleDevBtn").onclick = function menuToggle() {
+    if (toggleitem.style.display === "none" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "flex"
+        || toggleitem5.style.display === "flex" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "flex") {
+        toggleitem.style.display = "flex";
+        toggleitem2.style.display = "none";
+        toggleitem3.style.display = "none";
+        toggleitem4.style.display = "none";
+        toggleitem5.style.display = "none";
+        toggleitem6.style.display = "none";
+        toggleitem7.style.display = "none";
+    }
+    else {
+        toggleitem.style.display = "none";
+    }
+}
+
+
 document.getElementById("menuToggleCustomer").onclick = function menuToggle() {
+    if (toggleitem.style.display === "flex" || toggleitem2.style.display === "none" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "flex"
+        || toggleitem5.style.display === "flex" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "flex") {
+        toggleitem2.style.display = "flex";
+        toggleitem.style.display = "none";
+        toggleitem3.style.display = "none";
+        toggleitem4.style.display = "none";
+        toggleitem5.style.display = "none";
+        toggleitem6.style.display = "none";
+        toggleitem7.style.display = "none";
+    }
+    else {
+        toggleitem2.style.display = "none";
+    }
+}
+
+document.getElementById("menuToggleCustomerBtn").onclick = function menuToggle() {
     if (toggleitem.style.display === "flex" || toggleitem2.style.display === "none" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "flex"
         || toggleitem5.style.display === "flex" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "flex") {
         toggleitem2.style.display = "flex";
@@ -136,6 +169,21 @@ document.getElementById("menuToggleProject").onclick = function menuToggle(param
     }
 }
 
+document.getElementById("menuToggleProjectBtn").onclick = function menuToggle(params) {
+    if (toggleitem.style.display === "flex" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "none" || toggleitem4.style.display === "flex"
+        || toggleitem5.style.display === "flex" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "flex") {
+        toggleitem3.style.display = "flex";
+        toggleitem.style.display = "none";
+        toggleitem2.style.display = "none";
+        toggleitem4.style.display = "none";
+        toggleitem5.style.display = "none";
+        toggleitem6.style.display = "none";
+        toggleitem7.style.display = "none";
+    } else {
+        toggleitem3.style.display = "none";
+    }
+}
+
 document.getElementById("menuToggleBank").onclick = function menuToggle(params) {
     if (toggleitem.style.display === "flex" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "none"
         || toggleitem5.style.display === "flex" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "flex") {
@@ -151,8 +199,39 @@ document.getElementById("menuToggleBank").onclick = function menuToggle(params) 
     }
 }
 
+document.getElementById("menuToggleBankBtn").onclick = function menuToggle(params) {
+    if (toggleitem.style.display === "flex" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "none"
+        || toggleitem5.style.display === "flex" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "flex") {
+        toggleitem4.style.display = "flex";
+        toggleitem.style.display = "none";
+        toggleitem2.style.display = "none";
+        toggleitem3.style.display = "none";
+        toggleitem5.style.display = "none";
+        toggleitem6.style.display = "none";
+        toggleitem7.style.display = "none";
+    } else {
+        toggleitem4.style.display = "none";
+    }
+}
+
+
 
 document.getElementById("menuToggleTaxBs").onclick = function menuToggle(params) {
+    if (toggleitem.style.display === "flex" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "flex"
+        || toggleitem5.style.display === "none" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "flex") {
+        toggleitem5.style.display = "flex";
+        toggleitem.style.display = "none";
+        toggleitem2.style.display = "none";
+        toggleitem3.style.display = "none";
+        toggleitem4.style.display = "none";
+        toggleitem6.style.display = "none";
+        toggleitem7.style.display = "none";
+    } else {
+        toggleitem5.style.display = "none";
+    }
+}
+
+document.getElementById("menuToggleTaxBsBtn").onclick = function menuToggle(params) {
     if (toggleitem.style.display === "flex" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "flex"
         || toggleitem5.style.display === "none" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "flex") {
         toggleitem5.style.display = "flex";
@@ -182,7 +261,37 @@ document.getElementById("menuToggleTax").onclick = function menuToggle(params) {
     }
 }
 
+document.getElementById("menuToggleTaxBtn").onclick = function menuToggle(params) {
+    if (toggleitem.style.display === "flex" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "flex"
+        || toggleitem5.style.display === "flex" || toggleitem6.style.display === "none" || toggleitem7.style.display === "flex") {
+        toggleitem6.style.display = "flex";
+        toggleitem.style.display = "none";
+        toggleitem2.style.display = "none";
+        toggleitem3.style.display = "none";
+        toggleitem4.style.display = "none";
+        toggleitem5.style.display = "none";
+        toggleitem7.style.display = "none";
+    } else {
+        toggleitem6.style.display = "none";
+    }
+}
+
 document.getElementById("menuToggleMachine").onclick = function menuToggle(params) {
+    if (toggleitem.style.display === "flex" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "flex"
+        || toggleitem5.style.display === "flex" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "none") {
+        toggleitem7.style.display = "flex";
+        toggleitem.style.display = "none";
+        toggleitem2.style.display = "none";
+        toggleitem3.style.display = "none";
+        toggleitem4.style.display = "none";
+        toggleitem5.style.display = "none";
+        toggleitem6.style.display = "none";
+    } else {
+        toggleitem7.style.display = "none";
+    }
+}
+
+document.getElementById("menuToggleMachineBtn").onclick = function menuToggle(params) {
     if (toggleitem.style.display === "flex" || toggleitem2.style.display === "flex" || toggleitem3.style.display === "flex" || toggleitem4.style.display === "flex"
         || toggleitem5.style.display === "flex" || toggleitem6.style.display === "flex" || toggleitem7.style.display === "none") {
         toggleitem7.style.display = "flex";
