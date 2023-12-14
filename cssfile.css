@@ -337,6 +337,7 @@ div {
     padding: 0px 5px 0px 5px;
     text-align: center;
 }
+
 /*-------------------------버튼-------------------------*/
 
 a {
@@ -361,8 +362,8 @@ th {
     padding: 1em;
 }
 
-thead{
-    top:0px;
+thead {
+    top: 0px;
     position: sticky;
 }
 
@@ -384,18 +385,39 @@ a {
     height: 100%;
 }
 
+.modalBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 2;
+}
+.modalBox2 {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    z-index: 3;
+    overflow: auto;
+}
 .modal {
     position: absolute;
-    justify-self: center;
-    top: 50px;
     width: 1400px;
     height: 800px;
     border: 1px solid #999999ff;
     border-radius: 20px;
     background-color: white;
     padding: 2em;
-    z-index: 2;
-
+    z-index: 4;
+    opacity: 1;
 }
 
 .modalItemBox {
@@ -411,7 +433,7 @@ a {
     white-space: nowrap;
 }
 
-.modalDropdown{
+.modalDropdown {
     border: 1px solid #ccccccff;
     color: #434343ff;
     height: 30px;
@@ -420,7 +442,7 @@ a {
     margin: 5px 10px 0px 10px;
 }
 
-.modalDropdownGrade{
+.modalDropdownGrade {
     border: 1px solid #ccccccff;
     color: #434343ff;
     height: 30px;
@@ -429,7 +451,7 @@ a {
     margin: 5px 10px 0px 10px;
 }
 
-.modalBtnOX{
+.modalBtnOX {
     border: 1px solid #ccccccff;
     color: #434343ff;
     height: 30px;
@@ -438,7 +460,7 @@ a {
     margin: 0px 0px 0px 0px;
 }
 
-.modalBtnAuto{
+.modalBtnAuto {
     border: 1px solid #ccccccff;
     color: #434343ff;
     height: 30px;
@@ -448,7 +470,7 @@ a {
     margin: 0px 0px 0px 0px;
 }
 
-.modalBtnAutoLanguage{
+.modalBtnAutoLanguage {
     border: 1px solid #ccccccff;
     color: #434343ff;
     height: 30px;
@@ -458,34 +480,34 @@ a {
     margin: 5px 20px 20px 10px;
 }
 
-.modalMgL5{
+.modalMgL5 {
     margin-left: 5px;
 }
 
-.modalMgR5{
+.modalMgR5 {
     margin-right: 5px;
 }
 
-.modalMgR10{
+.modalMgR10 {
     margin-right: 10px;
 }
 
-.modalMgLR20{
+.modalMgLR20 {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.modalMgLR5{
+.modalMgLR5 {
     margin-left: 5px;
     margin-right: 5px;
 }
 
-br{
+br {
     /*커서 보이지 않게 하는 속성*/
     caret-color: transparent;
 }
 
-label{
+label {
     /*커서 보이지 않게 하는 속성*/
     caret-color: transparent;
 }

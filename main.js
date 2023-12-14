@@ -12,7 +12,9 @@ const searchBar = document.getElementById("searchBar");
 const btntoggleitem3 = document.getElementById("flexBtnChild3");
 const btntoggleitem4 = document.getElementById("flexBtnChild4");
 const modal = document.getElementById("modal");
-const modalBackground = document.getElementById("modalBackground")
+const modalBox = document.getElementById("modalBox");
+const modalBox2 = document.getElementById("modalBox2");
+
 
 const btntoggleitem = document.getElementById("flexBtnChild");
 const btntoggleitem2 = document.getElementById("flexBtnChild2");
@@ -49,11 +51,13 @@ document.getElementById("devAddBtn").onclick = function menuToggle(){
     toggleitem5.style.display = "none";
     toggleitem6.style.display = "none";
     toggleitem7.style.display = "none";
+    modalBox.style.display = "";
+    modalBox2.style.display = "";
     modal.style.display = "";
-    modalBackground.style.display = "";
     } else{
+        modalBox.style.display = "";
+        modalBox2.style.display = "";
         modal.style.display = "";
-        modalBackground.style.display = "";
     }
 }
 
