@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
- d
+<div class="item-logo bg-2c3e50ff text-white font-opensans-logo">
+    <div class="flexLogoText">
+        한국데이타시스템
+    </div>
+</div>
 </body>
 </html>
