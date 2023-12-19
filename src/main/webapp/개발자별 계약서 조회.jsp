@@ -4,7 +4,7 @@
 <html style="padding: 0px; margin: 0px;">
 
 <head>
-	<title>한국데이타시스템</title>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +17,6 @@
 
     <link rel="stylesheet" href="./cssfile.css">
     <link rel="stylesheet" href="./grid.css">
-    <link rel="stylesheet" href="./main.js">
-    <link rel="stylesheet" href="./mainTabs.js">
     <script src="https://kit.fontawesome.com/16c1215ef1.js" crossorigin="anonymous"></script>
     <style>
         div {
@@ -59,7 +57,7 @@
 <body>
 
     <div class="grid-container">
-    	<!-- 로고 include 시작 -->
+        <!-- 로고 include 시작 -->
         <jsp:include page="/logo.jsp"/>
         <!-- 로고 include 종료 -->
         
@@ -76,83 +74,63 @@
         <div class="item-main bg-f6f6f6ff text-333333">
             <div class="flex-main">
                 <div class="flexMainItem">
-                    <button class="btnCard" id="flexBtnPj">
-                        <div class="flexBtnParent">
-                            <div class="flexBtn">프로젝트투입</div>
-                            <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
-                        </div>
-                    </button>
-                    <button class="btnCard" id="flexBtnContract">
-                        <div class="flexBtnParent">
-                            <div class="flexBtn">계약서</div>
-                            <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
-                        </div>
-                    </button>
                     <button class="btnCard" id="flexBtnWhtaxVat">
                         <div class="flexBtnParent">
                             <div class="flexBtn">근로/사업 소득</div>
                             <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
                         </div>
                     </button>
-                    <button class="btnCard" id="flexBtnYear">
+                    <button class="btnCard" id="flexBtnEmp">
                         <div class="flexBtnParent">
-                            <div class="flexBtn">년차</div>
+                            <div class="flexBtn">직원</div>
                             <div class="flexBtn">
                                 <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
                             </div>
                         </div>
                     </button>
-                    <button class="btnCard" id="flexBtnGrade">
+                    <button class="btnCard" id="flexBtnArea">
                         <div class="flexBtnParent">
-                            <div class="flexBtn">등급</div>
+                            <div class="flexBtn">지역</div>
                             <div class="flexBtn">
                                 <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
                             </div>
                         </div>
                     </button>
-                    <button class="btnCard" id="flexBtnPosition">
+                    <button class="btnCard" id="flexBtnContractTerm">
                         <div class="flexBtnParent">
-                            <div class="flexBtn">직책</div>
+                            <div class="flexBtn">계약기간</div>
                             <div class="flexBtn">
                                 <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
                             </div>
                         </div>
                     </button>
-                    <button class="btnCard" id="flexBtnRank">
+                    <button class="btnCard" id="flexBtnContractAmount">
                         <div class="flexBtnParent">
-                            <div class="flexBtn">직급</div>
+                            <div class="flexBtn">계약금액</div>
                             <div class="flexBtn">
                                 <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
                             </div>
                         </div>
                     </button>
-                    <button class="btnCard" id="flexBtnJobtitle">
+                    <button class="btnCard" id="flexBtnCtEmpSalary">
                         <div class="flexBtnParent">
-                            <div class="flexBtn">직무</div>
+                            <div class="flexBtn">자사화금액</div>
                             <div class="flexBtn">
                                 <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
                             </div>
                         </div>
                     </button>
-                    <button class="btnCard" id="flexBtnSkill">
+                    <button class="btnCard" id="flexBtnEmpSalary">
                         <div class="flexBtnParent">
-                            <div class="flexBtn">스킬</div>
+                            <div class="flexBtn">직원금액</div>
                             <div class="flexBtn">
                                 <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
                             </div>
                         </div>
                     </button>
-                    <button class="btnCard" id="flexBtnLanguage">
+                    <button class="btnCard" id="flexBtnPayDate">
                         <div class="flexBtnParent">
-                            <div class="flexBtn">언어</div>
-                            <div class="flexBtn">
-                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
-                            </div>
-                        </div>
-                    </button>
-                    <button class="btnCard" id="flexBtnContactRoot">
-                        <div class="flexBtnParent">
-                            <div class="flexBtn">컨텍루트</div>
+                            <div class="flexBtn">지급일</div>
                             <div class="flexBtn">
                                 <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
                             </div>
@@ -166,36 +144,8 @@
                 </div>
 
                 <div class="flexMainItemChild">
-                    <button class="btnCardHidden" id="flexBtnChild"
-                        style="visibility: hidden; top:115px; left:251px;">
-                        <div class="flexBtnParent">
-                            <div class="flexBtnBox">
-                                <div class="flexBtnBoxCenter">
-                                    <div class="flexBtnHiddenBtnFix">O</div>
-                                    <div class="flexBtnHiddenBtnFix">X</div>
-                                </div>
-                                <div class="flexBtnBoxs2">
-                                    <div class="flexBtnHiddenBtnReset">초기화</div>
-                                    <div class="flexBtnHiddenBtnApply">적용</div>
-                                </div>
-                            </div>
-                    </button>
-                    <button class="btnCardHidden" id="flexBtnChild2"
-                        style="visibility: hidden; top:115px; left:409px;">
-                        <div class="flexBtnParent">
-                            <div class="flexBtnBox">
-                                <div class="flexBtnBoxs">
-                                    <div class="flexBtnHiddenBtn">개발자</div>
-                                    <div class="flexBtnHiddenBtn">고객사</div>
-                                </div>
-                                <div class="flexBtnBoxs2">
-                                    <div class="flexBtnHiddenBtnReset">초기화</div>
-                                    <div class="flexBtnHiddenBtnApply">적용</div>
-                                </div>
-                            </div>
-                    </button>
                     <button class="btnCardHidden" id="flexBtnChild3"
-                        style="visibility: hidden; top:115px; left:528px;">
+                        style="visibility: hidden; top:115px; left:251px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxs">
@@ -217,7 +167,7 @@
                     <div class="modal fontOpensansSm" id="modal" style="display: none;">
                         <form action="" method="post">
                                 <!-- <legend>개인정보입력</legend> -->
-                                <label class="font-opensans" style="margin-left: 10px;">개발자 추가</label><br><br><br>
+                                <label class="font-opensans" style="margin-left: 10px;">계약서 추가</label><br><br><br>
                                 <label style="margin-left: 10px;">이름</label>
                                 <label style="margin-left: 166px;">휴대폰번호</label>
                                 <label style="margin-left: 244px;">이메일주소</label>
@@ -379,9 +329,15 @@
                     <button class="btnCardHidden" id="flexBtnChild4"
                         style="visibility: hidden; top:115px; left:695px;">
                         <div class="flexBtnParent">
-                            <div class="flexBtn">년차</div>
-                            <div class="flexBtn">
-                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            <div class="flexBtnBox">
+                                <div class="flexBtnBoxCenter">
+                                    <div class="flexBtnHiddenBtnFix">O</div>
+                                    <div class="flexBtnHiddenBtnFix">X</div>
+                                </div>
+                                <div class="flexBtnBoxs2">
+                                    <div class="flexBtnHiddenBtnReset">초기화</div>
+                                    <div class="flexBtnHiddenBtnApply">적용</div>
+                                </div>
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnChild20"
@@ -578,23 +534,6 @@
                                 </div>
                             </div>
                     </button>
-                    <button class="btnCardHidden" id="flexBtnChild10"
-                        style="visibility: hidden;top:115px; left:1428px;">
-                        
-                        <div class="flexBtnParent">
-                        <div class="flexBtnBox">
-                            <div class="flexBtnBoxs">
-                                <div class="flexBtnHiddenBtn">잡코리아</div>
-                                <div class="flexBtnHiddenBtn">소개</div>
-                                <div class="flexBtnHiddenBtn">OKKY</div>
-                            </div>
-                            <div class="flexBtnBoxs2">
-                                <div class="flexBtnHiddenBtnReset">초기화</div>
-                                <div class="flexBtnHiddenBtnApply">적용</div>
-                            </div>
-                        </div>
-                        </div>
-                    </button>
                 </div>
 
                 <div class="flexMainItemSearch">
@@ -602,7 +541,7 @@
                         <input type="text" placeholder="" class="inputSearch mgL10" id="searchBar" style="z-index: 1;">
                         <button class="flexBtnSearch mgL10" id="searchBtn" style="z-index: 1;">검색</button>
                         <button class="flexBtnSearch mgL10" id="devAddBtn" type="button"
-                            style="z-index: 1;">개발자추가</button>
+                            style="z-index: 1;">계약서추가</button>
                     </div>
                     <!-- <div class="flexMainItemSearchChildRight">
                         <div class="flexMainItemSearchChildRightChild">
@@ -634,410 +573,257 @@
                             <thead>
                                 <tr>
                                 <th>이름</th>
-                                <th>프로젝트 투입</th>
-                                <th>개발자별계약서</th>
-                                <th>고객사별계약서</th>
                                 <th>3.3%/사업자</th>
                                 <th>주민등록번호</th>
                                 <th>사업자등록번호</th>
                                 <th>상호</th>
                                 <th>직원</th>
-                                <th>직원금액</th>
-                                <th>년차</th>
-                                <th>등급</th>
-                                <th>직책</th>
-                                <th>직급</th>
-                                <th>직무</th>
-                                <th>스킬</th>
-                                <th>언어</th>
-                                <th>소개자</th>
-                                <th>컨텍루트</th>
-                                <th>카카오톡닉네임</th>
                                 <th>휴대폰번호</th>
-                                <th>이메일주소</th>
-                                <th>은행</th>
-                                <th>예금주</th>
-                                <th>계좌번호</th>
+                                <th>주소</th>
+                                <th>프로젝트명</th>
+                                <th>계약기간</th>
+                                <th>계약금액</th>
+                                <th>자사화금액</th>
+                                <th>직원금액</th>
+                                <th>지급일</th>
+                                <th>계약일자</th>
+                                <th>계약서 다운로드</th>                                
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
+                                <td>N/A</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                             <tr>
                                 <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
                                 <td>3.3</td>
                                 <td>123456-1234567</td>
                                 <td>12345-12345</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
+                                <td>X</td>
                                 <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>O</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>3.3</td>
-                                <td>123456-1234567</td>
-                                <td>12345-12345</td>
+                                <td>경기도 수원시 장안구 월드컵경기장</td>
+                                <td>차세대 프로젝트</td>
+                                <td>2023.09.14~2023.12.31</td>
+                                <td>900만원</td>
+                                <td>100만원</td>
                                 <td>N/A</td>
-                                <td>O</td>
-                                <td>100만원</td>
-                                <td>9년</td>
-                                <td>중급</td>
-                                <td>PM</td>
-                                <td>사원</td>
-                                <td>개발</td>
-                                <td>spring</td>
-                                <td>JAVA</td>
-                                <td>고길동</td>
-                                <td>소개</td>
-                                <td>홍길동</td>
-                                <td>010-0000-0000</td>
-                                <td>홍길동@naver.com</td>
-                                <td>국민</td>
-                                <td>홍길동</td>
-                                <td>0000-000-000000</td>
+                                <td>15일</td>
+                                <td>2023.09.14</td>
+                                <td>계약서 다운로드</td>    
                             </tr>
                         </tbody>
                         </table>
@@ -1060,7 +846,7 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="main.js">
+    <script type="text/javascript" src="devContract.js">
     </script>
 
 </body>

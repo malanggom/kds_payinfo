@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="./cssfile.css">
     <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./main.js">
-    <link rel="stylesheet" href="./mainTabs.js">
     <script src="https://kit.fontawesome.com/16c1215ef1.js" crossorigin="anonymous"></script>
     <style>
         div {
@@ -92,6 +91,14 @@
                         <div class="flexBtnParent">
                             <div class="flexBtn">근로/사업 소득</div>
                             <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnEmp">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">직원</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
                         </div>
                     </button>
                     <button class="btnCard" id="flexBtnYear">
@@ -375,7 +382,14 @@
                     </div>
                 </div>
                     <!-- modal 종료 -->
-
+					<button class="btnCardHidden" id="flexBtnChild04"
+                        style="visibility: hidden; top:115px; left:695px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">직원</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                    </button>
                     <button class="btnCardHidden" id="flexBtnChild4"
                         style="visibility: hidden; top:115px; left:695px;">
                         <div class="flexBtnParent">
