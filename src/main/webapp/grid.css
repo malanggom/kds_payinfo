@@ -81,6 +81,7 @@ body{
     display: flex;
     align-items: center;
     padding: 0px 0px 0px 20px;
+    user-select: none;
 }
 
 .flexLogoButton {
@@ -103,6 +104,8 @@ body{
     align-items: center;
     background-color: white;
     color: #333333;
+    /*-- 텍스트 커서 안보이게 설정 --*/
+    user-select: none;
 }
 
 .flexHeaderChild {
@@ -175,6 +178,7 @@ body{
     height: 50px;
     width: 180px;
     padding: 0px 0px 0px 20px;
+    user-select: none;
 }
 
 .flexTabsChild {
