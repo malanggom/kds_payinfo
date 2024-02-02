@@ -241,9 +241,9 @@ body{
 
 .flexMainList {
     margin-top: 20px;
-    /* display: flex; */
+    display: flex;
     width: 100%;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .flexMainPagenation {
