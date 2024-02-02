@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" style="padding: 0px; margin: 0px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./cssfile.css">
+    <link rel="stylesheet" href="./grid.css">
+    <!-- <link rel="stylesheet" href="./main2.js"> -->
+    <script src="https://kit.fontawesome.com/16c1215ef1.js" crossorigin="anonymous"></script>
+    <style>
+        div {
+            height: 100%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridContainer">
+        <div class="itemLogo backgroundColorDarkblue textWhite fontOpensansLogo">
+            <div class="flexLogoText">
+                한국데이타시스템
+            </div>
+        </div>
+        <div class="itemHeader">
+            <div class="flexHeader">
+                <div class="flexHeaderChild">개발자관리 > 개발자조회</div>
+            </div>
+        </div>
+        <div class="itemTabs">
+            <div class="flexTabsText" id="menuToggleDev">개발자관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm"
+                    style="color: #ffffff;"></i></div>
+            <!-- display: none id, class 둘다 적용안되서 직접 스타일로 적용 -->
+            <div style="display: none;" id="menuToggleDevChild" class="flexTabsTextDevParent">
+                <a class="flexTabsChild" href="개발자조회.html">개발자조회</a>
+                <a class="flexTabsChild" href="개발자별 계약서 조회.html">개발자별 계약서 조회</a>
+            </div>
+
+            <div class="flexTabsText" id="menuToggleCustomer">고객사관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm"
+                    style="color: #ffffff;"></i></div>
+            <div style="display: none;" id="menuToggleCustomerChild" class="flexTabsTextCustomerParent">
+                <a class="flexTabsChild" href="고객사조회.html">고객사조회</a>
+                <a class="flexTabsChild" href="고객사별 계약서 조회.html">고객사별 계약서 조회</a>
+                <a class="flexTabsChild" href="고객사별 담당자 조회.html">고객사별 담당자 조회</a>
+            </div>
+
+            <div class="flexTabsText" id="menuToggleProject">프로젝트관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm"
+                    style="color: #ffffff;"></i></div>
+            <div style="display: none;" id="menuToggleProjectChild" class="flexTabsTextProjectParent">
+                <a class="flexTabsChild" href="프로젝트 조회.html">프로젝트 조회</a>
+                <a class="flexTabsChild" href="프로젝트별 개발자 조회.html">프로젝트별 개발자 조회</a>
+            </div>
+
+            <div class="flexTabsText" id="menuToggleBank">입출금관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm"
+                    style="color: #ffffff;"></i></div>
+            <div style="display: none;" id="menuToggleBankChild" class="flexTabsTextBankParent">
+                <a class="flexTabsChild" href="입금관리.html">입금관리</a>
+                <a class="flexTabsChild" href="출금관리.html">출금관리</a>
+            </div>
+
+            <div class="flexTabsText" id="menuToggleTaxBs">세금계산서관리</div>
+
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm"
+                    style="color: #ffffff;"></i></div>
+            <div style="display: none;" id="menuToggleTaxbillChild" class="flexTabsTextTaxbillParent">
+                <a class="flexTabsChild" href="매입세금계산서 조회.html">매입세금계산서 조회</a>
+                <a class="flexTabsChild" href="매출세금계산서 조회.html">매출세금계산서 조회</a>
+            </div>
+
+            <div class="flexTabsText" id="menuToggleTax">원천세관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm"
+                    style="color: #ffffff;"></i></div>
+            <div style="display: none;" id="menuToggleTaxChild" class="flexTabsTextTaxParent">
+                <a class="flexTabsChild" href="원천세조회.html">원천세조회</a>
+            </div>
+
+            <div class="flexTabsText" id="menuToggleMachine">기기관리</div>
+            <div class="flexTabsImage"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-sm"
+                    style="color: #ffffff;"></i></div>
+            <div style="display: none;" id="menuToggleMachineChild" class="flexTabsTextMachineParent">
+                <a class="flexTabsChild" href="기기조회.html">기기조회</a>
+            </div>
+
+            <div class="flexTabsText">로그아웃</div>
+
+        </div>
+        <!--  -->
+        <!--  -->
+
+        <div class="itemMain bg-f6f6f6ff text-333333">
+            <div class="flex-main">
+                <div class="flexMainItem">
+                    <button class="btnCard" id="flexBtnPj">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">프로젝트투입</div>
+                            <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnContract">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">계약서</div>
+                            <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnWhtaxVat">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">근로/사업 소득</div>
+                            <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnYear">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">년차</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnPosition">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">직책</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnBank">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">직급</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnJobtitle">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">직무</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnSkill">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">스킬</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnLanguage">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">언어</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard" id="flexBtnContactRoot">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">컨텍루트</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCard">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">초기화</div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="flexMainItemChild">
+                    <button class="btnCardHidden" id="flexBtnProjectChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:251px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtnBox">
+                                <div class="flexBtnBoxCenter">
+                                    <div class="flexBtnHiddenBtnFix">O</div>
+                                    <div class="flexBtnHiddenBtnFix">X</div>
+                                </div>
+                                <div class="flexBtnBoxs2">
+                                    <div class="flexBtnHiddenBtnReset">초기화</div>
+                                    <div class="flexBtnHiddenBtnApply">적용</div>
+                                </div>
+                            </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnContractChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:409px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtnBox">
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">개발자</div>
+                                    <div class="flexBtnHiddenBtn">고객사</div>
+                                </div>
+                                <div class="flexBtnBoxs2">
+                                    <div class="flexBtnHiddenBtnReset">초기화</div>
+                                    <div class="flexBtnHiddenBtnApply">적용</div>
+                                </div>
+                            </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnWhtaxVatChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:528px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtnBox">
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">3.3%</div>
+                                    <div class="flexBtnHiddenBtn">사업자</div>
+                                    <div class="flexBtnHiddenBtn">직원</div>
+                                </div>
+                                <div class="flexBtnBoxs2">
+                                    <div class="flexBtnHiddenBtnReset">초기화</div>
+                                    <div class="flexBtnHiddenBtnApply">적용</div>
+                                </div>
+                            </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnYearChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:695px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtn">년차</div>
+                            <div class="flexBtn">
+                                <i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i>
+                            </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnPositionChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:800px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtnBox">
+                                <div class="flexBtnBoxCenter">
+                                    <div class="flexBtnHiddenBtnFix">PM</div>
+                                    <div class="flexBtnHiddenBtnFix">PL</div>
+                                </div>
+                                <div class="flexBtnBoxCenter">
+                                    <div class="flexBtnHiddenBtnFix">AA</div>
+                                    <div class="flexBtnHiddenBtnFix">TA</div>
+                                </div>
+                                <div class="flexBtnBoxs2">
+                                    <div class="flexBtnHiddenBtnReset">초기화</div>
+                                    <div class="flexBtnHiddenBtnApply">적용</div>
+                                </div>
+                            </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnBankChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:905px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtnBox">
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">사원</div>
+                                    <div class="flexBtnHiddenBtn">주임</div>
+                                    <div class="flexBtnHiddenBtn">대리</div>
+                                </div>
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">과장</div>
+                                    <div class="flexBtnHiddenBtn">차장</div>
+                                    <div class="flexBtnHiddenBtn">부장</div>
+                                </div>
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">이사</div>
+                                </div>
+                                <div class="flexBtnBoxs2">
+                                    <div class="flexBtnHiddenBtnReset">초기화</div>
+                                    <div class="flexBtnHiddenBtnApply">적용</div>
+                                </div>
+                            </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnJobtitleChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:1009px;">
+                        <div class="flexBtnBox">
+                            <div class="flexBtnBoxs">
+                                <div class="flexBtnHiddenBtn">운영</div>
+                                <div class="flexBtnHiddenBtn">설계</div>
+                                <div class="flexBtnHiddenBtn">개발</div>
+                            </div>
+                            <div class="flexBtnBoxs2">
+                                <div class="flexBtnHiddenBtnReset">초기화</div>
+                                <div class="flexBtnHiddenBtnApply">적용</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnSkillChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:1114px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtnBox">
+                                <div class="flexBtnHiddenTitle">
+                                    기종
+                                </div>
+                                <div class="flexBtnBoxs1">
+                                    <div class="flexBtnHiddenBtn">C</div>
+                                    <div class="flexBtnHiddenBtn">C++</div>
+                                    <div class="flexBtnHiddenBtn">C#</div>
+                                    <div class="flexBtnHiddenBtn">Objective-C</div>
+                                    <div class="flexBtnHiddenBtn">Java</div>
+                                </div>
+                                <div class="flexBtnHiddenTitle">
+                                    OS
+                                </div>
+                                <div class="flexBtnBoxs1">
+                                    <div class="flexBtnHiddenBtn">Python</div>
+                                    <div class="flexBtnHiddenBtn">Html</div>
+                                    <div class="flexBtnHiddenBtn">CSS</div>
+                                    <div class="flexBtnHiddenBtn">JavaScript</div>
+                                    <div class="flexBtnHiddenBtn">Jsp</div>
+                                </div>
+                                <div class="flexBtnHiddenTitle">
+                                    DBMS
+                                </div>
+                                <div class="flexBtnBoxs1">
+                                    <div class="flexBtnHiddenBtn">R</div>
+                                    <div class="flexBtnHiddenBtn">Ruby</div>
+                                    <div class="flexBtnHiddenBtn">PHP</div>
+                                    <div class="flexBtnHiddenBtn">ADA</div>
+                                    <div class="flexBtnHiddenBtn">Basic</div>
+                                </div>
+                                <div class="flexBtnHiddenTitle">
+                                    툴
+                                </div>
+                                <div class="flexBtnBoxs1">
+                                    <div class="flexBtnHiddenBtn">Kotlin</div>
+                                    <div class="flexBtnHiddenBtn">Lisp</div>
+                                    <div class="flexBtnHiddenBtn">Pascal</div>
+                                    <div class="flexBtnHiddenBtn">Prolog</div>
+                                </div>
+                                <div class="flexBtnHiddenTitle">
+                                    프레임워크
+                                </div>
+                                <div class="flexBtnBoxs1">
+                                    <div class="flexBtnHiddenBtn">Scala</div>
+                                    <div class="flexBtnHiddenBtn">Swift</div>
+                                    <div class="flexBtnHiddenBtn">VisualBasic</div>
+                                </div>
+                                <div class="flexBtnHiddenTitle">
+                                    통신
+                                </div>
+                                <div class="flexBtnBoxs1">
+                                    <div class="flexBtnHiddenBtn">Scala</div>
+                                    <div class="flexBtnHiddenBtn">Swift</div>
+                                    <div class="flexBtnHiddenBtn">VisualBasic</div>
+                                </div>
+                                <div class="flexBtnHiddenTitle">
+                                    기타
+                                </div>
+                                <div class="flexBtnBoxs1">
+                                    <div class="flexBtnHiddenBtn">Scala</div>
+                                    <div class="flexBtnHiddenBtn">Swift</div>
+                                    <div class="flexBtnHiddenBtn">VisualBasic</div>
+                                </div>
+                                <div class="flexBtnBoxs2">
+                                    <div class="flexBtnHiddenBtnReset">초기화</div>
+                                    <div class="flexBtnHiddenBtnApply">적용</div>
+                                </div>
+                            </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnLanguageChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:1219px;">
+                        <div class="flexBtnParent">
+                            <div class="flexBtnBox">
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">C</div>
+                                    <div class="flexBtnHiddenBtn">C++</div>
+                                    <div class="flexBtnHiddenBtn">C#</div>
+                                    <div class="flexBtnHiddenBtn">Objective-C</div>
+                                    <div class="flexBtnHiddenBtn">Java</div>
+                                </div>
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">Python</div>
+                                    <div class="flexBtnHiddenBtn">Html</div>
+                                    <div class="flexBtnHiddenBtn">CSS</div>
+                                    <div class="flexBtnHiddenBtn">JavaScript</div>
+                                    <div class="flexBtnHiddenBtn">Jsp</div>
+                                </div>
+                                <div class="flexBtnBoxs">
+                                </div>
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">R</div>
+                                    <div class="flexBtnHiddenBtn">Ruby</div>
+                                    <div class="flexBtnHiddenBtn">PHP</div>
+                                    <div class="flexBtnHiddenBtn">ADA</div>
+                                    <div class="flexBtnHiddenBtn">Basic</div>
+                                </div>
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">Kotlin</div>
+                                    <div class="flexBtnHiddenBtn">Lisp</div>
+                                    <div class="flexBtnHiddenBtn">Pascal</div>
+                                    <div class="flexBtnHiddenBtn">Prolog</div>
+                                </div>
+                                <div class="flexBtnBoxs">
+                                    <div class="flexBtnHiddenBtn">Scala</div>
+                                    <div class="flexBtnHiddenBtn">Swift</div>
+                                    <div class="flexBtnHiddenBtn">VisualBasic</div>
+                                </div>
+                                <div class="flexBtnBoxs2">
+                                    <div class="flexBtnHiddenBtnReset">초기화</div>
+                                    <div class="flexBtnHiddenBtnApply">적용</div>
+                                </div>
+                            </div>
+                    </button>
+                    <button class="btnCardHidden" id="flexBtnContactRootChild"
+                        style="visibility: hidden; position:fixed; top:140px; left:1324px;">
+                        <div class="flexBtnBox">
+                            <div class="flexBtnBoxs">
+                                <div class="flexBtnHiddenBtn">잡코리아</div>
+                                <div class="flexBtnHiddenBtn">소개</div>
+                                <div class="flexBtnHiddenBtn">OKKY</div>
+                            </div>
+                            <div class="flexBtnBoxs2">
+                                <div class="flexBtnHiddenBtnReset">초기화</div>
+                                <div class="flexBtnHiddenBtnApply">적용</div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="flexMainItemSearch">
+                    <div class="flexMainItemSearchChild">
+                        <input type="text" placeholder="" class="mgL10">
+                        <button class="flexBtnSearch mgL10">검색</button>
+                        <button class="flexBtnSearch mgL10">개발자추가</button>
+                    </div>
+                    <!-- <div class="flexMainItemSearchChildRight">
+                        <div class="flexMainItemSearchChildRightChild">
+                            <button class="flexBtnSearch">10개씩</button>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="flexMainItemSearchHidden">
+                    <div class="flexMainItemSearchChild">
+                        <input type="text" placeholder="" class="mgL10" style="visibility: hidden;">
+                        <button class="flexBtnSearch mgL10" style="visibility: hidden;">검색</button>
+                        <button class="flexBtnSearch mgL10" style="visibility: hidden;">개발자추가</button>
+                    </div>
+                    <!-- <div class="flexMainItemSearchChildRight">
+                        <div class="flexMainItemSearchChildRightChild">
+                            <button class="flexBtnSearch">10개씩</button>
+                            <button class="flexBtnSearch" style="visibility: hidden;">10개씩</button>
+                            <button class="flexBtnSearch" style="visibility: hidden;">25개씩</button>
+                            <button class="flexBtnSearch" style="visibility: hidden;">50개씩</button>
+                            <button class="flexBtnSearch" style="visibility: hidden;">75개씩</button>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="flexMainList">
+                    <div class="fontOpensansSm" style=" width: 100%;
+                    overflow: scroll; margin-left: 10px;">
+                        <div style="width: 100%; height: 52px;">
+                            <div class="th">이름</div>
+                            <div class="th">프로젝트 투입</div>
+                            <div class="th">개발자별계약서</div>
+                            <div class="th">고객사별계약서</div>
+                            <div class="th">3.3%/사업자</div>
+                            <div class="th">주민등록번호</div>
+                            <div class="th">사업자등록번호</div>
+                            <div class="th">상호</div>
+                            <div class="th">직원</div>
+                            <div class="th">직원금액</div>
+                            <div class="th">년차</div>
+                            <div class="th">직책</div>
+                            <div class="th">직급</div>
+                            <div class="th">직무</div>
+                            <div class="th">스킬</div>
+                            <div class="th">언어</div>
+                            <div class="th">소개자</div>
+                            <div class="th">컨텍루트</div>
+                            <div class="th">카카오톡닉네임</div>
+                            <div class="th">휴대폰번호</div>
+                            <div class="th">이메일주소</div>
+                            <div class="th">은행</div>
+                            <div class="th">예금주</div>
+                            <div class="th">계좌번호</div>
+                        </div>
+                        <div style="width: 100%; height: 52px;">
+                            <div class="td">홍길동</div>
+                            <div class="td">O</div>
+                            <div class="td">X</div>
+                            <div class="td">X</div>
+                            <div class="td">3.3</div>
+                            <div class="td">123456-1234567</div>
+                            <div class="td">12345-12345</div>
+                            <div class="td">N/A</div>
+                            <div class="td">O</div>
+                            <div class="td">100만원</div>
+                            <div class="td">9년</div>
+                            <div class="td">PM</div>
+                            <div class="td">사원</div>
+                            <div class="td">개발</div>
+                            <div class="td">spring</div>
+                            <div class="td">JAVA</div>
+                            <div class="td">고길동</div>
+                            <div class="td">소개</div>
+                            <div class="td">홍길동</div>
+                            <div class="td">010-0000-0000</div>
+                            <div class="td">홍길동@naver.com</div>
+                            <div class="td">국민</div>
+                            <div class="td">홍길동</div>
+                            <div class="td">0000-000-000000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexMainPagenation">
+                    <div class="pagination fontOpensansSm">
+                        <a class="fontOpensansSm" href="#">&laquo;</a>
+                        <a class="fontOpensansSm" href="#">1</a>
+                        <a class="fontOpensansSm" href="#">2</a>
+                        <a class="fontOpensansSm" href="#">3</a>
+                        <a class="fontOpensansSm" href="#">4</a>
+                        <a class="fontOpensansSm" href="#">5</a>
+                        <a class="fontOpensansSm" href="#">6</a>
+                        <a class="fontOpensansSm" href="#">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="main2.js">
+    </script>
+</body>
+
+</html>
