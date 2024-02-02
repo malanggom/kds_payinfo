@@ -104,7 +104,7 @@
                 <div class="flexMainItem">
                     <button class="btnCard" id="flexBtnPj">
                         <div class="flexBtnParent">
-                            <div class="flexBtn">프로젝트투입</div>
+                            <div class="flexBtn">프로젝트</div>
                             <div class="flexBtn"><i class="fa-solid fa-chevron-right fa-rotate-90 fa-xs"></i></div>
                         </div>
                     </button>
@@ -185,7 +185,7 @@
 
                 <div class="flexMainItemChild">
                     <button class="btnCardHidden" id="flexBtnProjectChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:251px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:250px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxCenter">
@@ -199,7 +199,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnContractChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:409px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:408px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxs">
@@ -213,7 +213,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnWhtaxVatChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:528px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:526px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxs">
@@ -228,7 +228,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnYearChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:695px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:691px;">
                         <div class="flexBtnParent">
                             <div class="flexBtn">년차</div>
                             <div class="flexBtn">
@@ -236,7 +236,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnPositionChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:800px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:796px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxCenter">
@@ -254,7 +254,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnBankChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:905px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:900px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxs">
@@ -277,7 +277,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnJobtitleChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:1009px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:1005px;">
                         <div class="flexBtnBox">
                             <div class="flexBtnBoxs">
                                 <div class="flexBtnHiddenBtn">운영</div>
@@ -291,7 +291,7 @@
                         </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnSkillChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:1114px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:1110px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnHiddenTitle">
@@ -364,7 +364,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnLanguageChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:1219px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:1214px;">
                         <div class="flexBtnParent">
                             <div class="flexBtnBox">
                                 <div class="flexBtnBoxs">
@@ -408,7 +408,7 @@
                             </div>
                     </button>
                     <button class="btnCardHidden" id="flexBtnContactRootChild"
-                        style="visibility: hidden; position:fixed; top:140px; left:1324px;">
+                        style="visibility: hidden; position:absolute; top:110px; left:1319px;">
                         <div class="flexBtnBox">
                             <div class="flexBtnBoxs">
                                 <div class="flexBtnHiddenBtn">잡코리아</div>
@@ -425,9 +425,9 @@
 
                 <div class="flexMainItemSearch">
                     <div class="flexMainItemSearchChild">
-                        <input type="text" placeholder="" class="mgL10">
-                        <button class="flexBtnSearch mgL10">검색</button>
-                        <button class="flexBtnSearch mgL10">개발자추가</button>
+                        <input type="text" placeholder="" class="flexBtnSearch mgL10" id="searchBar">
+                        <button class="flexBtnSearch mgL10" id="searchBtn">검색</button>
+                        <button class="flexBtnSearch mgL10" id="devAddBtn">개발자추가</button>
                     </div>
                     <!-- <div class="flexMainItemSearchChildRight">
                         <div class="flexMainItemSearchChildRightChild">
@@ -436,13 +436,13 @@
                     </div> -->
                 </div>
 
-                <div class="flexMainItemSearchHidden">
+                <!-- <div class="flexMainItemSearchHidden">
                     <div class="flexMainItemSearchChild">
-                        <input type="text" placeholder="" class="mgL10" style="visibility: hidden;">
+                        <input type="text" placeholder="" class="flexBtnSearch mgL10" style="visibility: hidden;">
                         <button class="flexBtnSearch mgL10" style="visibility: hidden;">검색</button>
                         <button class="flexBtnSearch mgL10" style="visibility: hidden;">개발자추가</button>
                     </div>
-                    <!-- <div class="flexMainItemSearchChildRight">
+                    <div class="flexMainItemSearchChildRight">
                         <div class="flexMainItemSearchChildRightChild">
                             <button class="flexBtnSearch">10개씩</button>
                             <button class="flexBtnSearch" style="visibility: hidden;">10개씩</button>
@@ -450,8 +450,8 @@
                             <button class="flexBtnSearch" style="visibility: hidden;">50개씩</button>
                             <button class="flexBtnSearch" style="visibility: hidden;">75개씩</button>
                         </div>
-                    </div> -->
-                </div>
+                    </div> 
+                </div> -->
 
                 <div class="flexMainList">
                     <div class="fontOpensansSm" style=" width: 100%;

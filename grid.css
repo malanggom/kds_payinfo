@@ -208,7 +208,7 @@ body{
 .flexMainItemSearchChild {
     display: flex;
     align-items: end;
-    height: 80px;
+    height: 50px;
 }
 
 .flexMainItemSearchHidden {

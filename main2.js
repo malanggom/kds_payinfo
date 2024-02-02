@@ -25,98 +25,95 @@ const btntoggleitemLanguage = document.getElementById("flexBtnLanguageChild");
 const btntoggleitemContractRoot = document.getElementById("flexBtnContactRootChild");
 // const btntoggleitem20 = document.getElementById("flexBtnChild20");
 
-// document.getElementById("devAddBtn").onclick = function menuToggle(){
-//     if (btntoggleitemProject.style.visibility === "" || btntoggleitemContract.style.visibility === "" || btntoggleitemWhtaxVat.style.visibility === ""
-//     || btntoggleitemYear.style.visibility === "" || btntoggleitemPosition.style.visibility === "" || btntoggleitemBank.style.visibility === ""
-//     || btntoggleitemJobtitle.style.visibility === "" || btntoggleitemSkill.style.visibility === "" || btntoggleitemLanguage.style.visibility === ""
-//     || btntoggleitemContractRoot.style.visibility === "" || toggleitemDev.style.display === "flex"
-//     || toggleitemCustomer.style.display === "flex" || toggleitemProject.style.display === "flex" || toggleitemBank.style.display === "flex"
-//     || toggleitemTaxbill.style.display === "flex" || toggleitemTax.style.display === "flex" || toggleitemMachine.style.display === "flex") {
-//     btntoggleitemProject.style.visibility = "hidden";
-//     btntoggleitemContract.style.visibility = "hidden";
-//     btntoggleitemWhtaxVat.style.visibility = "hidden";
-//     btntoggleitemYear.style.visibility = "hidden";
-//     btntoggleitemPosition.style.visibility = "hidden";
-//     btntoggleitemBank.style.visibility = "hidden";
-//     btntoggleitemJobtitle.style.visibility = "hidden";
-//     btntoggleitemSkill.style.visibility = "hidden";
-//     btntoggleitemLanguage.style.visibility = "hidden";
-//     btntoggleitemContractRoot.style.visibility = "hidden";
-//     btntoggleitem20.style.visibility = "hidden";
-//     toggleitemDev.style.display = "none";
-//     toggleitemCustomer.style.display = "none";
-//     toggleitemProject.style.display = "none";
-//     toggleitemBank.style.display = "none";
-//     toggleitemTaxbill.style.display = "none";
-//     toggleitemTax.style.display = "none";
-//     toggleitemMachine.style.display = "none";
-//     modalBox.style.display = "";
-//     modalBox2.style.display = "";
-//     modal.style.display = "";
-//     } else{
-//         modalBox.style.display = "";
-//         modalBox2.style.display = "";
-//         modal.style.display = "";
-//     }
-// }
+document.getElementById("devAddBtn").onclick = function menuToggle(){
+    if (btntoggleitemProject.style.visibility === "" || btntoggleitemContract.style.visibility === "" || btntoggleitemWhtaxVat.style.visibility === ""
+    || btntoggleitemYear.style.visibility === "" || btntoggleitemPosition.style.visibility === "" || btntoggleitemBank.style.visibility === ""
+    || btntoggleitemJobtitle.style.visibility === "" || btntoggleitemSkill.style.visibility === "" || btntoggleitemLanguage.style.visibility === ""
+    || btntoggleitemContractRoot.style.visibility === "" || toggleitemDev.style.display === "flex"
+    || toggleitemCustomer.style.display === "flex" || toggleitemProject.style.display === "flex" || toggleitemBank.style.display === "flex"
+    || toggleitemTaxbill.style.display === "flex" || toggleitemTax.style.display === "flex" || toggleitemMachine.style.display === "flex") {
+    btntoggleitemProject.style.visibility = "hidden";
+    btntoggleitemContract.style.visibility = "hidden";
+    btntoggleitemWhtaxVat.style.visibility = "hidden";
+    btntoggleitemYear.style.visibility = "hidden";
+    btntoggleitemPosition.style.visibility = "hidden";
+    btntoggleitemBank.style.visibility = "hidden";
+    btntoggleitemJobtitle.style.visibility = "hidden";
+    btntoggleitemSkill.style.visibility = "hidden";
+    btntoggleitemLanguage.style.visibility = "hidden";
+    btntoggleitemContractRoot.style.visibility = "hidden";
+    toggleitemDev.style.display = "none";
+    toggleitemCustomer.style.display = "none";
+    toggleitemProject.style.display = "none";
+    toggleitemBank.style.display = "none";
+    toggleitemTaxbill.style.display = "none";
+    toggleitemTax.style.display = "none";
+    toggleitemMachine.style.display = "none";
+    modalBox.style.display = "";
+    modalBox2.style.display = "";
+    modal.style.display = "";
+    } else{
+        modalBox.style.display = "";
+        modalBox2.style.display = "";
+        modal.style.display = "";
+    }
+}
 
-// document.getElementById("searchBar").onclick = function menuToggle(){
-//     if (btntoggleitemProject.style.visibility === "" || btntoggleitemContract.style.visibility === "" || btntoggleitemWhtaxVat.style.visibility === ""
-//     || btntoggleitemYear.style.visibility === "" || btntoggleitemPosition.style.visibility === "" || btntoggleitemBank.style.visibility === ""
-//     || btntoggleitemJobtitle.style.visibility === "" || btntoggleitemSkill.style.visibility === "" || btntoggleitemLanguage.style.visibility === ""
-//     || btntoggleitemContractRoot.style.visibility === "" || toggleitemDev.style.display === "flex"
-//     || toggleitemCustomer.style.display === "flex" || toggleitemProject.style.display === "flex" || toggleitemBank.style.display === "flex"
-//     || toggleitemTaxbill.style.display === "flex" || toggleitemTax.style.display === "flex" || toggleitemMachine.style.display === "flex") {
-//     btntoggleitemProject.style.visibility = "hidden";
-//     btntoggleitemContract.style.visibility = "hidden";
-//     btntoggleitemWhtaxVat.style.visibility = "hidden";
-//     btntoggleitemYear.style.visibility = "hidden";
-//     btntoggleitemPosition.style.visibility = "hidden";
-//     btntoggleitemBank.style.visibility = "hidden";
-//     btntoggleitemJobtitle.style.visibility = "hidden";
-//     btntoggleitemSkill.style.visibility = "hidden";
-//     btntoggleitemLanguage.style.visibility = "hidden";
-//     btntoggleitemContractRoot.style.visibility = "hidden";
-//     btntoggleitem20.style.visibility = "hidden";
-//     toggleitemDev.style.display = "none";
-//     toggleitemCustomer.style.display = "none";
-//     toggleitemProject.style.display = "none";
-//     toggleitemBank.style.display = "none";
-//     toggleitemTaxbill.style.display = "none";
-//     toggleitemTax.style.display = "none";
-//     toggleitemMachine.style.display = "none";
-//     } else{
-//     }
-// }
+document.getElementById("searchBar").onclick = function menuToggle(){
+    if (btntoggleitemProject.style.visibility === "" || btntoggleitemContract.style.visibility === "" || btntoggleitemWhtaxVat.style.visibility === ""
+    || btntoggleitemYear.style.visibility === "" || btntoggleitemPosition.style.visibility === "" || btntoggleitemBank.style.visibility === ""
+    || btntoggleitemJobtitle.style.visibility === "" || btntoggleitemSkill.style.visibility === "" || btntoggleitemLanguage.style.visibility === ""
+    || btntoggleitemContractRoot.style.visibility === "" || toggleitemDev.style.display === "flex"
+    || toggleitemCustomer.style.display === "flex" || toggleitemProject.style.display === "flex" || toggleitemBank.style.display === "flex"
+    || toggleitemTaxbill.style.display === "flex" || toggleitemTax.style.display === "flex" || toggleitemMachine.style.display === "flex") {
+    btntoggleitemProject.style.visibility = "hidden";
+    btntoggleitemContract.style.visibility = "hidden";
+    btntoggleitemWhtaxVat.style.visibility = "hidden";
+    btntoggleitemYear.style.visibility = "hidden";
+    btntoggleitemPosition.style.visibility = "hidden";
+    btntoggleitemBank.style.visibility = "hidden";
+    btntoggleitemJobtitle.style.visibility = "hidden";
+    btntoggleitemSkill.style.visibility = "hidden";
+    btntoggleitemLanguage.style.visibility = "hidden";
+    btntoggleitemContractRoot.style.visibility = "hidden";
+    toggleitemDev.style.display = "none";
+    toggleitemCustomer.style.display = "none";
+    toggleitemProject.style.display = "none";
+    toggleitemBank.style.display = "none";
+    toggleitemTaxbill.style.display = "none";
+    toggleitemTax.style.display = "none";
+    toggleitemMachine.style.display = "none";
+    } else{
+    }
+}
 
-// document.getElementById("searchBtn").onclick = function menuToggle(){
-//     if (btntoggleitemProject.style.visibility === "" || btntoggleitemContract.style.visibility === "" || btntoggleitemWhtaxVat.style.visibility === ""
-//     || btntoggleitemYear.style.visibility === "" || btntoggleitemPosition.style.visibility === "" || btntoggleitemBank.style.visibility === ""
-//     || btntoggleitemJobtitle.style.visibility === "" || btntoggleitemSkill.style.visibility === "" || btntoggleitemLanguage.style.visibility === ""
-//     || btntoggleitemContractRoot.style.visibility === "" || toggleitemDev.style.display === "flex"
-//     || toggleitemCustomer.style.display === "flex" || toggleitemProject.style.display === "flex" || toggleitemBank.style.display === "flex"
-//     || toggleitemTaxbill.style.display === "flex" || toggleitemTax.style.display === "flex" || toggleitemMachine.style.display === "flex") {
-//     btntoggleitemProject.style.visibility = "hidden";
-//     btntoggleitemContract.style.visibility = "hidden";
-//     btntoggleitemWhtaxVat.style.visibility = "hidden";
-//     btntoggleitemYear.style.visibility = "hidden";
-//     btntoggleitemPosition.style.visibility = "hidden";
-//     btntoggleitemBank.style.visibility = "hidden";
-//     btntoggleitemJobtitle.style.visibility = "hidden";
-//     btntoggleitemSkill.style.visibility = "hidden";
-//     btntoggleitemLanguage.style.visibility = "hidden";
-//     btntoggleitemContractRoot.style.visibility = "hidden";
-//     btntoggleitem20.style.visibility = "hidden";
-//     toggleitemDev.style.display = "none";
-//     toggleitemCustomer.style.display = "none";
-//     toggleitemProject.style.display = "none";
-//     toggleitemBank.style.display = "none";
-//     toggleitemTaxbill.style.display = "none";
-//     toggleitemTax.style.display = "none";
-//     toggleitemMachine.style.display = "none";
-//     } else{
-//     }
-// }
+document.getElementById("searchBtn").onclick = function menuToggle(){
+    if (btntoggleitemProject.style.visibility === "" || btntoggleitemContract.style.visibility === "" || btntoggleitemWhtaxVat.style.visibility === ""
+    || btntoggleitemYear.style.visibility === "" || btntoggleitemPosition.style.visibility === "" || btntoggleitemBank.style.visibility === ""
+    || btntoggleitemJobtitle.style.visibility === "" || btntoggleitemSkill.style.visibility === "" || btntoggleitemLanguage.style.visibility === ""
+    || btntoggleitemContractRoot.style.visibility === "" || toggleitemDev.style.display === "flex"
+    || toggleitemCustomer.style.display === "flex" || toggleitemProject.style.display === "flex" || toggleitemBank.style.display === "flex"
+    || toggleitemTaxbill.style.display === "flex" || toggleitemTax.style.display === "flex" || toggleitemMachine.style.display === "flex") {
+    btntoggleitemProject.style.visibility = "hidden";
+    btntoggleitemContract.style.visibility = "hidden";
+    btntoggleitemWhtaxVat.style.visibility = "hidden";
+    btntoggleitemYear.style.visibility = "hidden";
+    btntoggleitemPosition.style.visibility = "hidden";
+    btntoggleitemBank.style.visibility = "hidden";
+    btntoggleitemJobtitle.style.visibility = "hidden";
+    btntoggleitemSkill.style.visibility = "hidden";
+    btntoggleitemLanguage.style.visibility = "hidden";
+    btntoggleitemContractRoot.style.visibility = "hidden";
+    toggleitemDev.style.display = "none";
+    toggleitemCustomer.style.display = "none";
+    toggleitemProject.style.display = "none";
+    toggleitemBank.style.display = "none";
+    toggleitemTaxbill.style.display = "none";
+    toggleitemTax.style.display = "none";
+    toggleitemMachine.style.display = "none";
+    } else{
+    }
+}
 
 // --------------------main-tabs 토글 부분 ---------------------//
 
